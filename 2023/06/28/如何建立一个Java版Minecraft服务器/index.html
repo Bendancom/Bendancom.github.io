@@ -28,7 +28,7 @@
 <meta property="og:description" content="如何建立一个Java版Minecraft服务器注：本文用&lt;和&gt;标记在中间的为变量，如&lt;variables&gt; 前期准备设备准备 一台联网Linux系统电脑，性能能满足自身Minecraft服务器需求  软件准备 java  知识准备 基础计算机知识 基础Linux知识 一定英语水平  创建目录在自己中意的地方创建即可 安装Java环境自行百度 下载Minecraft服务器(无">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-28T14:00:00.000Z">
-<meta property="article:modified_time" content="2023-06-28T15:35:12.062Z">
+<meta property="article:modified_time" content="2023-06-28T16:46:33.433Z">
 <meta property="article:author" content="Bendancom">
 <meta name="twitter:card" content="summary">
 
@@ -173,10 +173,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-06-28 22:00:00 / 修改时间：23:35:12" itemprop="dateCreated datePublished" datetime="2023-06-28T22:00:00+08:00">2023-06-28</time>
+              <time title="创建时间：2023-06-28 22:00:00" itemprop="dateCreated datePublished" datetime="2023-06-28T22:00:00+08:00">2023-06-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-06-29 00:46:33" itemprop="dateModified" datetime="2023-06-29T00:46:33+08:00">2023-06-29</time>
+              </span>
 
           
 
@@ -260,6 +266,9 @@
 <h3 id="Forge-1"><a href="#Forge-1" class="headerlink" title="Forge"></a>Forge</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=&lt;Description&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=forking</span><br><span class="line"><span class="attr">WorkingDirectory</span>=&lt;WorkingDirectory&gt;</span><br><span class="line"><span class="attr">ExecStart</span>=&lt;ServerDirectory&gt;/run.sh</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
 
 <h3 id="Fabric-1"><a href="#Fabric-1" class="headerlink" title="Fabric"></a>Fabric</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=&lt;Description&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=simple</span><br><span class="line"><span class="attr">WorkingDirectory</span>=&lt;WorkingDirectory&gt;</span><br><span class="line"><span class="attr">ExecStart</span>=java -jar &lt;jar file&gt; -Xmx&lt;MaxMemory&gt; -Xms&lt;MinMemory&gt; nogui</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>重加载<code>systemd</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br></pre></td></tr></table></figure>
 
 <p>完成后使用命令启动开机自启，同时也可通过命令随时控制开关</p>
 <p>开启</p>
