@@ -146,6 +146,144 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://bendancom.github.io/2023/06/28/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAJava%E7%89%88Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bendancom">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bendancom's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/28/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAJava%E7%89%88Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">如何建立一个Java版Minecraft服务器</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-06-28 22:00:00 / 修改时间：23:19:15" itemprop="dateCreated datePublished" datetime="2023-06-28T22:00:00+08:00">2023-06-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="如何建立一个Java版Minecraft服务器"><a href="#如何建立一个Java版Minecraft服务器" class="headerlink" title="如何建立一个Java版Minecraft服务器"></a>如何建立一个Java版Minecraft服务器</h1><p>注：本文用<code>&lt;</code>和<code>&gt;</code>标记在中间的为变量，如<code>&lt;variables&gt;</code></p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="设备准备"><a href="#设备准备" class="headerlink" title="设备准备"></a>设备准备</h3><ul>
+<li>一台联网Linux系统电脑，性能能满足自身Minecraft服务器需求</li>
+</ul>
+<h3 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h3><ul>
+<li>java</li>
+</ul>
+<h3 id="知识准备"><a href="#知识准备" class="headerlink" title="知识准备"></a>知识准备</h3><ul>
+<li>基础计算机知识</li>
+<li>基础Linux知识</li>
+<li>一定英语水平</li>
+</ul>
+<h2 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h2><p>在自己中意的地方创建即可</p>
+<h2 id="安装Java环境"><a href="#安装Java环境" class="headerlink" title="安装Java环境"></a>安装Java环境</h2><p>自行百度</p>
+<h2 id="下载Minecraft服务器-无mod"><a href="#下载Minecraft服务器-无mod" class="headerlink" title="下载Minecraft服务器(无mod)"></a>下载Minecraft服务器(无mod)</h2><p><a target="_blank" rel="noopener" href="https://launchermeta.mojang.com/mc/game/version_manifest.json">Minecraft版本记录</a><br>从中挑选自己想要的版本，若要安装mod则需注意mod是否匹配服务器版本</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;Version Number&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;Version Type&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;url&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;Data Time&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;releaseTime&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;RelTime&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<p>其中<code>&lt;Version Number&gt;</code>即为版本号<br>在浏览器中打开后按<kbd>Ctrl+F</kbd>跳出搜索框，可快速查找<br>找到后打开位于其同一组的<code>&lt;url&gt;</code>，找到<code>downloads</code>元素，里面的<code>server</code>的<code>url</code>既是Minecraft服务器文件的位置，下载该文件到选定目录即可<br>如：<br>获取1.19.3版本的Minecraft服务器</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.19.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;release&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://piston-meta.mojang.com/v1/packages/0bd42105f72a2e5adb2f3a11a35d5467b7456990/1.19.3.json&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2023-06-12T10:09:57+00:00&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;releaseTime&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2022-12-07T08:17:18+00:00&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<p>打开<code>url</code>链接，找到<code>downloads</code>元素</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;downloads&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;client&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;977727ec9ab8b4631e5c12839f064092f17663f8&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">22704188</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://piston-data.mojang.com/v1/objects/977727ec9ab8b4631e5c12839f064092f17663f8/client.jar&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;client_mappings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;42366909cc612e76208d34bf1356f05a88e08a1d&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">7574170</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://piston-data.mojang.com/v1/objects/42366909cc612e76208d34bf1356f05a88e08a1d/client.txt&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;c9df48efed58511cdd0213c56b9013a7b5c9ac1f&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">47162712</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;server_mappings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;size&quot;</span><span class="punctuation">:</span> <span class="number">5852819</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://piston-data.mojang.com/v1/objects/bc44f6dd84cd2f3ad8c0caad850eaca9e82067e3/server.txt&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<p>这就找到了<code>server.jar</code>的<code>url</code>地址<br>下载至选定目录<br>进行初始化</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo java -Xmx4G -jar &lt;jar file&gt; nogui</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="下载Minecraft服务器-有mod"><a href="#下载Minecraft服务器-有mod" class="headerlink" title="下载Minecraft服务器(有mod)"></a>下载Minecraft服务器(有mod)</h2><p>选择想要的mod架构</p>
+<ul>
+<li>Forge</li>
+<li>Fabric</li>
+</ul>
+<h3 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a>Forge</h3><p><a target="_blank" rel="noopener" href="https://files.minecraftforge.net/net/minecraftforge/forge">Forge下载地址</a><br>注：该官网可能需要VPN才能流畅连接<br>选择自己想要的版本，点击<code>Install</code>后跳转至下载页面<br>等待5秒后点击右上角的<code>Skip</code>即可下载</p>
+<p>将下载的jar安装文件移至选定目录中<br>而后进行安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo java -jar &lt;jar file&gt; --installServer</span><br></pre></td></tr></table></figure>
+<p>若出现错误</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: Invalid or corrupt jarfile</span><br></pre></td></tr></table></figure>
+<p>使用<code>jarfix</code>修复<br>安装完成后即可删去安装文件与安装日志<br>此时文件目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">├── libraries</span><br><span class="line">├── run.bat</span><br><span class="line">├── run.sh</span><br><span class="line">└── user_jvm_args.txt</span><br></pre></td></tr></table></figure>
+<p>然后启动对应的windows&#x2F;unix脚本，即<br><code>run.bar</code>——windows脚本<br><code>run.sh</code>——unix脚本</p>
+<p>若出现<code>Error reading module</code>错误<br>则是java版本问题或默认java版本选择错误<br>可以安装新版本java或修改脚本指定绝对路径java</p>
+<p>此时文件目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── config</span><br><span class="line">├── defaultconfigs</span><br><span class="line">├── eula.txt</span><br><span class="line">├── libraries</span><br><span class="line">├── logs</span><br><span class="line">├── mods</span><br><span class="line">├── run.bat</span><br><span class="line">├── run.sh</span><br><span class="line">└── user_jvm_args.txt</span><br></pre></td></tr></table></figure>
+<p>将<code>eula.txt</code>文件中的<code>eula</code>变量改为<code>true</code></p>
+<p>再次执行对应的启动脚本</p>
+<p>此时文件目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">├── banned-ips.json</span><br><span class="line">├── banned-players.json</span><br><span class="line">├── config</span><br><span class="line">├── defaultconfigs</span><br><span class="line">├── eula.txt</span><br><span class="line">├── libraries</span><br><span class="line">├── logs</span><br><span class="line">├── mods</span><br><span class="line">├── ops.json</span><br><span class="line">├── run.bat</span><br><span class="line">├── run.sh</span><br><span class="line">├── server.properties</span><br><span class="line">├── user_jvm_args.txt</span><br><span class="line">├── usercache.json</span><br><span class="line">├── whitelist.json</span><br><span class="line">└── world</span><br></pre></td></tr></table></figure>
+
+<p>服务器框架就搭建好了<br>把Mod塞进mods文件夹里<br>Java启动配置只需修改<code>user_jvm_args.txt</code>文件<br>服务器配置可参照 <a target="_blank" rel="noopener" href="https://minecraft.fandom.com/zh/wiki/Server.properties">Minecraft中文Wiki——配置服务器设置</a></p>
+<h3 id="Fabric"><a href="#Fabric" class="headerlink" title="Fabric"></a>Fabric</h3><p><a target="_blank" rel="noopener" href="https://fabricmc.net/use/server">Fabric下载地址</a><br>选择自己想要的版本下载至选定目录中<br>而后根据其教程运行第一次该jar文件进行初始化</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo java -Xmx4G -jar &lt;jar file&gt; nogui</span><br></pre></td></tr></table></figure>
+<p>此时目录应有如下文件<br>(fabric根据版本不同文件名也有所不同)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">├── eula.txt</span><br><span class="line">├── fabric-server-mc.1.19.2-loader.0.14.21-launcher.0.11.2.jar</span><br><span class="line">├── libraries</span><br><span class="line">├── logs</span><br><span class="line">├── mods</span><br><span class="line">├── server.jar</span><br><span class="line">├── server.properties</span><br><span class="line">└── versions</span><br></pre></td></tr></table></figure>
+<p>将<code>eula.txt</code>里的eula变量改为<code>true</code></p>
+<p>服务器框架就搭建好了<br>把Mod塞进<code>mods</code>文件夹里<br>服务器配置可参照 <a target="_blank" rel="noopener" href="https://minecraft.fandom.com/zh/wiki/Server.properties">Minecraft中文Wiki——配置服务器设置</a></p>
+<h2 id="开启防火墙"><a href="#开启防火墙" class="headerlink" title="开启防火墙"></a>开启防火墙</h2><p>查看Minecraft服务器端口，默认为25565</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> server.properties | grep server-port</span><br></pre></td></tr></table></figure>
+<p>开放对应端口的IPv4与IPv6访问<br>目前内网穿透有两种方式</p>
+<ul>
+<li>Frp</li>
+<li>P2P</li>
+</ul>
+<p>Frp可能需要付费(有些有限流限额的免费)，但仅需服务端进行配置，客户端无需繁琐操作<br>P2P完全免费，但服务端与客户端都要进行专门的配置</p>
+<p>注：开放IPv6可以免去内网穿透，但是并不是所有玩家都支持IPv6访问，可能受到路由器、光猫、运营商等的拦截</p>
+<h2 id="自动启动"><a href="#自动启动" class="headerlink" title="自动启动"></a>自动启动</h2><p>此时你的服务器已配置好，但每次都得你自己动手启动，为什么不能开机启动呢？</p>
+<p>在<code>/lib/systemd/system</code>目录中创建<code>&lt;ServiceName&gt;.service</code><br>创建内容如下</p>
+<h3 id="原版"><a href="#原版" class="headerlink" title="原版"></a>原版</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=&lt;Description&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=simple</span><br><span class="line"><span class="attr">WorkingDirectory</span>=&lt;WorkingDirectory&gt;</span><br><span class="line"><span class="attr">ExecStart</span>=java -jar &lt;jar file&gt; -Xmx&lt;MaxMemory&gt; -Xms&lt;MinMemory&gt; nogui</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h3 id="Forge-1"><a href="#Forge-1" class="headerlink" title="Forge"></a>Forge</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=&lt;Description&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=forking</span><br><span class="line"><span class="attr">WorkingDirectory</span>=&lt;WorkingDirectory&gt;</span><br><span class="line"><span class="attr">ExecStart</span>=&lt;ServerDirectory&gt;/run.sh</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h3 id="Fabric-1"><a href="#Fabric-1" class="headerlink" title="Fabric"></a>Fabric</h3><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=&lt;Description&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">Type</span>=simple</span><br><span class="line"><span class="attr">WorkingDirectory</span>=&lt;WorkingDirectory&gt;</span><br><span class="line"><span class="attr">ExecStart</span>=java -jar &lt;jar file&gt; -Xmx&lt;MaxMemory&gt; -Xms&lt;MinMemory&gt; nogui</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>完成后使用命令启动开机自启，同时也可通过命令随时控制开关</p>
+<p>开启</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start &lt;ServiceName&gt;.service</span><br></pre></td></tr></table></figure>
+<p>关闭</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl stop &lt;ServiceName&gt;.service</span><br></pre></td></tr></table></figure>
+<p>开机自启</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> &lt;ServiceName&gt;.service</span><br></pre></td></tr></table></figure>
+<p>取消开机自启</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">disable</span> &lt;ServiceName&gt;.service</span><br></pre></td></tr></table></figure>
+
+<p>参考资料：<br>[1] <a target="_blank" rel="noopener" href="https://www.cnblogs.com/wangbingbing/p/15316714.html">王冰冰.mc服务器和客户端下载地址获取（mojang官方）以及各个非官版服务端（minecraft 我的世界）[EB&#x2F;OL].(2021-09-21 15:43)[2023-6-28].https://www.cnblogs.com/wangbingbing/p/15316714.html</a><br>[2] <a target="_blank" rel="noopener" href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E6%9E%B6%E8%AE%BE%E6%9C%8D%E5%8A%A1%E5%99%A8">Minecraft Wiki.教程&#x2F;架设服务器[EB&#x2F;OL].(2023-6-14 04:17)[2023-6-28].https://minecraft.fandom.com/zh/wiki/教程/架设服务器</a><br>[3] <a target="_blank" rel="noopener" href="http://ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html">阮一峰.Systemd 入门教程：命令篇[EB&#x2F;OL].(2016-3-7)[2023-6-28].http://ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html</a><br>[4] <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html">阮一峰.Systemd 入门教程：实战篇[EB&#x2F;OL].(2016-3-8)[2023-6-28].http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://bendancom.github.io/2023/06/18/MarkDown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,10 +307,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-06-18 23:00:00 / 修改时间：22:59:27" itemprop="dateCreated datePublished" datetime="2023-06-18T23:00:00+08:00">2023-06-18</time>
+              <time title="创建时间：2023-06-18 23:00:00" itemprop="dateCreated datePublished" datetime="2023-06-18T23:00:00+08:00">2023-06-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-06-27 23:48:48" itemprop="dateModified" datetime="2023-06-27T23:48:48+08:00">2023-06-27</time>
+              </span>
 
           
 
@@ -270,7 +414,7 @@
 
 <h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>在特定字符前加上一个反斜杠使其单作为文字显示。<br><code>MarkDown</code>支持以下特殊字符前加反斜杠。</p>
 <p>\   反斜线<br>`   反引号<br>*   星号<br>_   下划线<br>{}  花括号<br>[]  方括号<br>()  小括号<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   感叹号  </p>
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>如果要在编辑器中插入公式，可以使用一个美元符号(<code>$</code>)包裹<code>TeX</code>或<code>LaTeX</code>格式的数学公式来实现。<br>单独显示的<code>LaTeX</code>公式用<code>$$...$$</code>定义。<br><code>MathJax</code>公式使用这里不再赘述，详情请自行搜索。</p>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>如果要在编辑器中插入公式，可以使用一个美元符号(<code>$</code>)包裹<code>TeX</code>或<code>LaTeX</code>格式的数学公式来实现。<br>单独显示的<code>LaTeX</code>公式用<code>\[</code>与<code>\]</code>包裹定义。<br><code>MathJax</code>公式使用这里不再赘述，详情请自行搜索。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$\sum<span class="emphasis">_&#123;i=0&#125;^N\int_</span>&#123;a&#125;^&#123;b&#125;g(t,i)\text&#123;d&#125;t$</span><br><span class="line">$$\sum<span class="emphasis">_&#123;i=0&#125;N\int_</span>&#123;a&#125;&#123;b&#125;g(t,i)\text&#123;d&#125;t$$</span><br></pre></td></tr></table></figure>
 
 <h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p>本篇会简单讲解流程图的画法，若要了解其他图表的画法，可以参考<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/dengjin20104042056/article/details/107073187">CSDN-【Tools】MarkDown教程(四)-MarkDown中的UML图</a></p>
@@ -387,7 +531,7 @@ X代表已完成
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
