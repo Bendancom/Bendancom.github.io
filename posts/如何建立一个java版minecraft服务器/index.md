@@ -1,8 +1,6 @@
 # 如何建立一个Java版Minecraft服务器
 
 
-# 如何建立一个Java版Minecraft服务器
-
 在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。
 
 &lt;!--more--&gt;

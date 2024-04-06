@@ -1,8 +1,6 @@
 # Markdown技术手册
 
 
-# MarkDown技术手册(个人编写版)
-
 本篇技术手册由个人编撰汇总而成。旨在撰写`Markdown`时便于记忆查询
 
 &lt;!--more--&gt;
