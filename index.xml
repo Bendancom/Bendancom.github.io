@@ -1,19 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Bendancom的博客</title>
-    <link>http://localhost:1313/</link>
+    <link>https://bendancom.github.io/</link>
     <description>Bendancom的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
       <webMaster>bendancom@qq.com (Bendancom)</webMaster><lastBuildDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</lastBuildDate>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://bendancom.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
   <title>Markdown技术手册</title>
-  <link>http://localhost:1313/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/</link>
+  <link>https://bendancom.github.io/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/</link>
   <pubDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</pubDate>
   <author>Bendancom</author>
-  <guid>http://localhost:1313/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/</guid>
+  <guid>https://bendancom.github.io/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/</guid>
   <description><![CDATA[<h1 id="markdown技术手册个人编写版" class="heading-element">
   <a href="#markdown%e6%8a%80%e6%9c%af%e6%89%8b%e5%86%8c%e4%b8%aa%e4%ba%ba%e7%bc%96%e5%86%99%e7%89%88" class="heading-mark"></a>MarkDown技术手册(个人编写版)</h1><p>本篇技术手册由个人编撰汇总而成。旨在撰写<code>Markdown</code>时便于记忆查询</p>]]></description>
+</item>
+<item>
+  <title>如何建立一个Java版Minecraft服务器</title>
+  <link>https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+  <pubDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</pubDate>
+  <author>Bendancom</author>
+  <guid>https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+  <description><![CDATA[<h1 id="如何建立一个java版minecraft服务器" class="heading-element">
+  <a href="#%e5%a6%82%e4%bd%95%e5%bb%ba%e7%ab%8b%e4%b8%80%e4%b8%aajava%e7%89%88minecraft%e6%9c%8d%e5%8a%a1%e5%99%a8" class="heading-mark"></a>如何建立一个Java版Minecraft服务器</h1><p>在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。</p>]]></description>
 </item>
 </channel>
 </rss>

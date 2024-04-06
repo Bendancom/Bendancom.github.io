@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>如何建立一个Java版Minecraft服务器 - Bendancom的博客</title><meta name="author" content="Bendancom">
+<meta name="author-link" content="">
+<meta name="description" content="
+  如何建立一个Java版Minecraft服务器在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。" /><meta name="keywords" content='Minecraft, 服务器' /><meta itemprop="name" content="如何建立一个Java版Minecraft服务器">
+<meta itemprop="description" content="
+  如何建立一个Java版Minecraft服务器在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。"><meta itemprop="datePublished" content="2023-06-18T23:00:00+08:00" />
+<meta itemprop="dateModified" content="2024-04-05T22:00:00+08:00" />
+<meta itemprop="wordCount" content="1720">
+<meta itemprop="keywords" content="Minecraft,服务器," /><meta property="og:title" content="如何建立一个Java版Minecraft服务器" />
+<meta property="og:description" content="
+  如何建立一个Java版Minecraft服务器在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-18T23:00:00+08:00" />
+<meta property="article:modified_time" content="2024-04-05T22:00:00+08:00" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何建立一个Java版Minecraft服务器"/>
+<meta name="twitter:description" content="
+  如何建立一个Java版Minecraft服务器在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><link rel="next" href="https://bendancom.github.io/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "如何建立一个Java版Minecraft服务器",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/bendancom.github.io\/posts\/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8\/"
+    },"genre": "posts","keywords": "Minecraft, 服务器","wordcount":  1720 ,
+    "url": "https:\/\/bendancom.github.io\/posts\/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8\/","datePublished": "2023-06-18T23:00:00+08:00","dateModified": "2024-04-05T22:00:00+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Bendancom"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Bendancom的博客"><span class="header-title-text">Bendancom的博客</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/archives/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> 归档</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容……" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Bendancom的博客"><span class="header-title-text">Bendancom的博客</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜索文章标题或内容……" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/archives/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> 归档</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="Bendancom的博客">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">文章</a></li><li class="breadcrumb-item active" aria-current="page">如何建立一个Java版Minecraft服务器</li>
+    </ol>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>如何建立一个Java版Minecraft服务器</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Bendancom</span></span></div><div class="post-meta-line"><span title="发布于 2023-06-18 23:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-06-18">2023-06-18</time></span>&nbsp;<span title="更新于 2024-04-05 22:00:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-04-05">2024-04-05</time></span>&nbsp;<span title="1720 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1800 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 4 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前期准备">前期准备</a>
+      <ul>
+        <li><a href="#设备准备">设备准备</a></li>
+        <li><a href="#环境准备">环境准备</a></li>
+        <li><a href="#知识准备">知识准备</a></li>
+      </ul>
+    </li>
+    <li><a href="#服务器根目录">服务器根目录</a>
+      <ul>
+        <li><a href="#个人电脑">个人电脑</a>
+          <ul>
+            <li><a href="#linux系统"><code>Linux</code>系统</a></li>
+            <li><a href="#windows系统"><code>Windows</code>系统</a></li>
+            <li><a href="#mac-os系统"><code>Mac OS</code>系统</a></li>
+          </ul>
+        </li>
+        <li><a href="#云服务器">云服务器</a></li>
+      </ul>
+    </li>
+    <li><a href="#环境准备-1">环境准备</a></li>
+    <li><a href="#服务器安装">服务器安装</a>
+      <ul>
+        <li><a href="#原版">原版</a></li>
+        <li><a href="#forge"><code>Forge</code></a></li>
+        <li><a href="#fabric"><code>Fabric</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#防火墙">防火墙</a>
+      <ul>
+        <li><a href="#ipv4"><code>IPv4</code></a></li>
+        <li><a href="#ipv6">IPv6</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h1 id="如何建立一个java版minecraft服务器" class="heading-element">
+  <a href="#%e5%a6%82%e4%bd%95%e5%bb%ba%e7%ab%8b%e4%b8%80%e4%b8%aajava%e7%89%88minecraft%e6%9c%8d%e5%8a%a1%e5%99%a8" class="heading-mark"></a>如何建立一个Java版Minecraft服务器</h1><p>在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。</p>
+<h2 id="前期准备" class="heading-element">
+  <a href="#%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87" class="heading-mark"></a>前期准备</h2><h3 id="设备准备" class="heading-element">
+  <a href="#%e8%ae%be%e5%a4%87%e5%87%86%e5%a4%87" class="heading-mark"></a>设备准备</h3><p>选其中一个即可：</p>
+<ul>
+<li>一台联网电脑，性能满足游戏需求，系统优先级为<code>Linux &gt; Windows = Mac</code>。</li>
+<li>云服务器</li>
+</ul>
+<h3 id="环境准备" class="heading-element">
+  <a href="#%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87" class="heading-mark"></a>环境准备</h3><ul>
+<li><code>Java</code></li>
+</ul>
+<h3 id="知识准备" class="heading-element">
+  <a href="#%e7%9f%a5%e8%af%86%e5%87%86%e5%a4%87" class="heading-mark"></a>知识准备</h3><ul>
+<li>基本电脑知识</li>
+<li>基础<code>Linux</code>知识(<code>Linux</code>系统)</li>
+<li>一定英语水平，便于解决疑难问题</li>
+</ul>
+<h2 id="服务器根目录" class="heading-element">
+  <a href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%a0%b9%e7%9b%ae%e5%bd%95" class="heading-mark"></a>服务器根目录</h2><p>推荐创建在带快照的文件系统内。</p>
+<h3 id="个人电脑" class="heading-element">
+  <a href="#%e4%b8%aa%e4%ba%ba%e7%94%b5%e8%84%91" class="heading-mark"></a>个人电脑</h3><h4 id="linux系统" class="heading-element">
+  <a href="#linux%e7%b3%bb%e7%bb%9f" class="heading-mark"></a><code>Linux</code>系统</h4><p><code>Btrfs</code>或<code>ZFS</code>文件系统</p>
+<ul>
+<li>分区快照</li>
+</ul>
+<p><code>Ext4</code>或<code>XFS</code></p>
+<ul>
+<li>无快照</li>
+</ul>
+<h4 id="windows系统" class="heading-element">
+  <a href="#windows%e7%b3%bb%e7%bb%9f" class="heading-mark"></a><code>Windows</code>系统</h4><p><code>NTFS</code>文件系统</p>
+<ul>
+<li>全区快照</li>
+</ul>
+<h4 id="mac-os系统" class="heading-element">
+  <a href="#mac-os%e7%b3%bb%e7%bb%9f" class="heading-mark"></a><code>Mac OS</code>系统</h4><p><code>APFS</code>文件系统</p>
+<ul>
+<li>全区快照</li>
+</ul>
+<h3 id="云服务器" class="heading-element">
+  <a href="#%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8" class="heading-mark"></a>云服务器</h3><ul>
+<li>云快照</li>
+</ul>
+<h2 id="环境准备-1" class="heading-element">
+  <a href="#%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87-1" class="heading-mark"></a>环境准备</h2><p>自行查找Java的安装。</p>
+<h2 id="服务器安装" class="heading-element">
+  <a href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%ae%89%e8%a3%85" class="heading-mark"></a>服务器安装</h2><h3 id="原版" class="heading-element">
+  <a href="#%e5%8e%9f%e7%89%88" class="heading-mark"></a>原版</h3><p><a href="https://launchermeta.mojang.com/mc/game/version_manifest.json"target="_blank" rel="external nofollow noopener noreferrer">版本</a>
+在其中挑选所需的服务器版本，如有模组需注意二者<code>Minecraft</code>版本的匹配。</p>
+<div class="highlight" id="id-1"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;1.20.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;release&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://piston-meta.mojang.com/v1/packages/30e78c499d4df02aab34a811e290c1805f925105/1.20.1.json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;time&#34;</span><span class="p">:</span> <span class="s2">&#34;2024-04-03T06:24:18+00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;releaseTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-06-12T13:25:51+00:00&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="err">,</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>从中获取版本号对应的<code>URL</code>并打开此<code>json</code>文件，在其中找到<code>downloads</code>元素(第165行)</p>
+<div class="highlight" id="id-2"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;downloads&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;client&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;sha1&#34;</span><span class="p">:</span> <span class="s2">&#34;4e969a3079409732a39aa722ea61d03876c41367&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;size&#34;</span><span class="p">:</span> <span class="mi">25230298</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://piston-data.mojang.com/v1/objects/4e969a3079409732a39aa722ea61d03876c41367/client.jar&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;client_mappings&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;sha1&#34;</span><span class="p">:</span> <span class="s2">&#34;85283b9708072cada19de2a29955957939af2127&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;size&#34;</span><span class="p">:</span> <span class="mi">9308979</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://piston-data.mojang.com/v1/objects/85283b9708072cada19de2a29955957939af2127/client.txt&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;server&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;sha1&#34;</span><span class="p">:</span> <span class="s2">&#34;00cab0438130dc3e6ae91f53387bb96ae7986d31&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;size&#34;</span><span class="p">:</span> <span class="mi">50546942</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://piston-data.mojang.com/v1/objects/00cab0438130dc3e6ae91f53387bb96ae7986d31/server.jar&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;server_mappings&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;sha1&#34;</span><span class="p">:</span> <span class="s2">&#34;a5e08ee736fb987f2920b98d25961245aac087bc&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;size&#34;</span><span class="p">:</span> <span class="mi">7172652</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://piston-data.mojang.com/v1/objects/a5e08ee736fb987f2920b98d25961245aac087bc/server.txt&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="err">,</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>下载第三个元素<code>server</code>中的<code>URL</code>文件<code>server.jar</code>至根目录中。</p>
+<p>在服务器根目录中执行如下命令：
+该命令为初始化服务器组件与启动服务器。</p>
+<div class="highlight" id="id-3"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">java -Xmx4G -jar server.jar nogui</span></span></code></pre></td></tr></table>
+</div>
+</div><p>参数含义：</p>
+<ul>
+<li><code>-Xmx4G</code> 最大内存4G</li>
+<li><code>-jar server.jar</code> 指定<code>server.jar</code>为执行目标</li>
+<li><code>nogui</code> 无图形界面执行</li>
+</ul>
+<p>执行完后文件目录</p>
+<div class="highlight" id="id-4"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">├── eula.txt
+</span></span><span class="line"><span class="cl">├── libraries
+</span></span><span class="line"><span class="cl">├── logs
+</span></span><span class="line"><span class="cl">├── server.jar
+</span></span><span class="line"><span class="cl">├── server.properties
+</span></span><span class="line"><span class="cl">└── versions</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将<code>eula.txt</code>文件中的<code>eula</code>变量由<code>false</code>改为<code>true</code></p>
+<p>服务器配置文件为<code>server.properties</code>，可参照 <a href="https://minecraft.fandom.com/zh/wiki/Server.properties"target="_blank" rel="external nofollow noopener noreferrer">Minecraft中文Wiki——配置服务器设置</a> 配置</p>
+<h3 id="forge" class="heading-element">
+  <a href="#forge" class="heading-mark"></a><code>Forge</code></h3><p><a href="https://files.minecraftforge.net/net/minecraftforge/forge"target="_blank" rel="external nofollow noopener noreferrer">下载地址</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+选择自己想要的版本，点击<code>Install</code>后跳转至下载页面
+等待5秒后点击右上角的Skip即可下载</p>
+<p>将下载的文件移至根目录中，而后执行如下命令：</p>
+<div class="highlight" id="id-5"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">java -jar forge-1.20.1-48.0.39.jar --installServer</span></span></code></pre></td></tr></table>
+</div>
+</div><p>参数含义：</p>
+<ul>
+<li><code>-jar forge-1.20.1-48.0.39.jar</code> 指定执行文件，根据自身下载的文件更改该参数</li>
+<li><code>--installServer</code> <code>Forge</code>自带参数</li>
+</ul>
+<p>执行完后根目录如下：</p>
+<div class="highlight" id="id-6"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">├── libraries
+</span></span><span class="line"><span class="cl">├── run.bat
+</span></span><span class="line"><span class="cl">├── run.sh
+</span></span><span class="line"><span class="cl">└── user_jvm_args.txt</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行对应系统的启动脚本：</p>
+<ul>
+<li><code>Windows</code>: <code>run.bat</code></li>
+<li><code>Linux</code>与<code>Mac OS</code>: <code>run.sh</code></li>
+</ul>
+<p>执行完后根目录如下：</p>
+<div class="highlight" id="id-7"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">├── config
+</span></span><span class="line"><span class="cl">├── defaultconfigs
+</span></span><span class="line"><span class="cl">├── eula.txt
+</span></span><span class="line"><span class="cl">├── libraries
+</span></span><span class="line"><span class="cl">├── logs
+</span></span><span class="line"><span class="cl">├── mods
+</span></span><span class="line"><span class="cl">├── run.bat
+</span></span><span class="line"><span class="cl">├── run.sh
+</span></span><span class="line"><span class="cl">└── user_jvm_args.txt</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将<code>eula.txt</code>文件中的<code>eula</code>变量由<code>false</code>改为<code>true</code>。
+模组存放于<code>mods</code>文件夹中。
+<code>Java</code>启动参数在<code>user_jvm_args.txt</code>中设置。
+服务器配置文件为<code>server.properties</code>，可参照 <a href="https://minecraft.fandom.com/zh/wiki/Server.properties"target="_blank" rel="external nofollow noopener noreferrer">Minecraft中文Wiki——配置服务器设置</a> 配置。</p>
+<h3 id="fabric" class="heading-element">
+  <a href="#fabric" class="heading-mark"></a><code>Fabric</code></h3><p><a href="https://fabricmc.net/use/server"target="_blank" rel="external nofollow noopener noreferrer">下载地址</a>
+下载所需版本至根目录中。</p>
+<p>执行如下命令：
+该命令为初始化服务器组件与启动服务器。</p>
+<div class="highlight" id="id-8"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">java -Xmx4G -jar fabric-server-mc.1.19.2-loader.0.14.21-launcher.0.11.2.jar nogui</span></span></code></pre></td></tr></table>
+</div>
+</div><p>参数含义：</p>
+<ul>
+<li><code>-jar fabric-server-mc.1.19.2-loader.0.14.21-launcher.0.11.2.jar</code> 执行目标为<code>Fabric</code>服务器文件</li>
+<li><code>-Xmx4G</code> 最大内存为<code>4G</code></li>
+<li><code>nogui</code> 无图形界面</li>
+</ul>
+<p>执行完毕后根目录如下：</p>
+<div class="highlight" id="id-9"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">eula</span><span class="o">.</span><span class="n">txt</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">fabric</span><span class="o">-</span><span class="n">server</span><span class="o">-</span><span class="n">mc</span><span class="o">.</span><span class="mf">1.19</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">loader</span><span class="o">.</span><span class="mf">0.14</span><span class="o">.</span><span class="mi">21</span><span class="o">-</span><span class="n">launcher</span><span class="o">.</span><span class="mf">0.11</span><span class="o">.</span><span class="mf">2.j</span><span class="n">ar</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">libraries</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">logs</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">mods</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">server</span><span class="o">.</span><span class="n">jar</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">server</span><span class="o">.</span><span class="n">properties</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">versions</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>将<code>eula.txt</code>文件中的<code>eula</code>变量由<code>false</code>改为<code>true</code>。
+模组存放于<code>mods</code>文件夹中。
+服务器配置文件为<code>server.properties</code>，可参照 <a href="https://minecraft.fandom.com/zh/wiki/Server.properties"target="_blank" rel="external nofollow noopener noreferrer">Minecraft中文Wiki——配置服务器设置</a> 配置。</p>
+<h2 id="防火墙" class="heading-element">
+  <a href="#%e9%98%b2%e7%81%ab%e5%a2%99" class="heading-mark"></a>防火墙</h2><p><code>Minecraft</code>默认端口为25565。
+可在<code>server.properties</code>中的<code>server-port</code>变量配置</p>
+<p>服务器需要公网<code>IP</code>供他人访问</p>
+<h3 id="ipv4" class="heading-element">
+  <a href="#ipv4" class="heading-mark"></a><code>IPv4</code></h3><p>在防火墙中开启对应端口的<code>IPv4</code>出入。</p>
+<p><code>IPv4</code>的公网<code>IP</code>难以获得，若没有只能内网穿透
+目前<code>IPv4</code>内网穿透有两种方式</p>
+<ul>
+<li><code>Frp</code></li>
+<li><code>P2P</code></li>
+</ul>
+<p><code>Frp</code>可能需要付费(有些有限流限额的免费)，但仅需服务端进行配置，客户端无需繁琐操作
+<code>P2P</code>完全免费，但服务端与客户端都要进行专门的配置</p>
+<h3 id="ipv6" class="heading-element">
+  <a href="#ipv6" class="heading-mark"></a>IPv6</h3><p>在防火墙中开启对应端口的<code>IPv6</code>出入</p>
+<p><code>IPv6</code>因其庞大的数量，目前所有<code>IPv6</code>设备都有自己的属于<code>IPv6</code>的公网<code>IP</code>。
+<code>IPv6</code>在国内虽说普及率达到90%以上，但由于设备的报废期问题，可能受到路由器、光猫、运营商等的拦截。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>注：该官网可能需要<code>VPN</code>才能流畅连接&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2024-04-05 22:00:00">更新于 2024-04-05&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="如何建立一个Java版Minecraft服务器" data-hashtags="Minecraft,服务器"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-hashtag="Minecraft"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="如何建立一个Java版Minecraft服务器"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/minecraft/" class="post-tag" title="标签 - Minecraft">Minecraft</a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-tag" title="标签 - 服务器">服务器</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav">
+      <a href="/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" class="post-nav-item" rel="next" title="Markdown技术手册">Markdown技术手册<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.124.1"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.2"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Bendancom</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
