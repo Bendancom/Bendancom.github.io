@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Minecraft - 标签 - Bendancom的博客</title>
-    <link>http://localhost:1313/tags/minecraft/</link>
+    <link>https://bendancom.github.io/tags/minecraft/</link>
     <description>Minecraft - 标签 | Bendancom的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
-      <webMaster>bendancom@qq.com (Bendancom)</webMaster><lastBuildDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/minecraft/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>bendancom@qq.com (Bendancom)</webMaster><lastBuildDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</lastBuildDate><atom:link href="https://bendancom.github.io/tags/minecraft/" rel="self" type="application/rss+xml" /><item>
   <title>如何建立一个Java版Minecraft服务器</title>
-  <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+  <link>https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
   <pubDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</pubDate>
   <author>Bendancom</author>
-  <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+  <guid>https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
   <description><![CDATA[<p>在长久以来的单人Minecraft后，即使其游玩内容丰富，但仍想找到志同道合的朋友一起游玩去创造美好回忆。而中国版Minecraft可以说是限制颇大了，因而国际版Java服务器可以说是联机的首选了。</p>]]></description>
 </item>
 </channel>
