@@ -613,5 +613,5 @@ X代表已完成
 ---
 
 > 作者: Bendancom  
-> URL: https://bendancom.github.io/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/  
+> URL: http://localhost:1313/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/  
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -13,7 +13,7 @@
   <meta itemprop="datePublished" content="2024-06-08T23:00:00+08:00">
   <meta itemprop="dateModified" content="2024-06-08T23:00:00+08:00">
   <meta itemprop="wordCount" content="3817">
-  <meta itemprop="keywords" content="C&#43;&#43;,Multi,Index,Range"><meta property="og:url" content="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+  <meta itemprop="keywords" content="C&#43;&#43;,Multi,Index,Range"><meta property="og:url" content="http://localhost:1313/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">
   <meta property="og:site_name" content="Bendancom的博客">
   <meta property="og:title" content="多索引泛型容器类的实现">
   <meta property="og:description" content="C&#43;&#43;中实现了单映射STL容器std::map，但实际业务中需要的是多映射类型的对任意数据的快速查找。虽可以使用多个std::map，但这对空间浪费过大，因而作者自行实现一个简易的多索引泛型容器库。">
@@ -34,7 +34,7 @@
 <meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://bendancom.github.io/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="http://localhost:1313/posts/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -44,9 +44,9 @@
     "inLanguage": "zh-CN",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https:\/\/bendancom.github.io\/posts\/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0\/"
+      "@id": "http:\/\/localhost:1313\/posts\/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0\/"
     },"genre": "posts","keywords": "C\u002b\u002b, Multi, Index, Range, Concepts","wordcount":  3817 ,
-    "url": "https:\/\/bendancom.github.io\/posts\/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-06-08T23:00:00+08:00","dateModified": "2024-06-08T23:00:00+08:00","publisher": {
+    "url": "http:\/\/localhost:1313\/posts\/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-06-08T23:00:00+08:00","dateModified": "2024-06-08T23:00:00+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -1895,9 +1895,9 @@
           </div></div><div class="post-info-line">
         <div class="post-info-md"><span><a href="/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
         <div class="post-info-share">
-          <span><a href="javascript:void(0);" title="分享到 X" data-sharer="twitter" data-url="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-title="多索引泛型容器类的实现" data-hashtags="C&#43;&#43;,Multi,Index,Range,Concepts"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-hashtag="C&#43;&#43;"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-title="多索引泛型容器类的实现"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+          <span><a href="javascript:void(0);" title="分享到 X" data-sharer="twitter" data-url="http://localhost:1313/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-title="多索引泛型容器类的实现" data-hashtags="C&#43;&#43;,Multi,Index,Range,Concepts"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-hashtag="C&#43;&#43;"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" data-title="多索引泛型容器类的实现"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
         </div>
       </div></div>
