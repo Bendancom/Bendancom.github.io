@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Collections - 合集 - Bendancom的博客</title>
+    <link>https://bendancom.github.io/collections/</link>
+    <description>Collections - 合集 | Bendancom的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
+      <webMaster>bendancom@qq.com (Bendancom)</webMaster><atom:link href="https://bendancom.github.io/collections/" rel="self" type="application/rss+xml" /></channel>
+</rss>

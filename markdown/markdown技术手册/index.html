@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Markdown技术手册 - Bendancom的博客</title><meta name="author" content="Bendancom">
+<meta name="author-link" content="">
+<meta name="description" content="本篇技术手册由个人汇总而成。旨在撰写Markdown时便于记忆查询" /><meta name="keywords" content='Markdown, 手册' />
+  <meta itemprop="name" content="Markdown技术手册">
+  <meta itemprop="description" content="本篇技术手册由个人汇总而成。旨在撰写Markdown时便于记忆查询">
+  <meta itemprop="datePublished" content="2023-06-18T23:00:00+08:00">
+  <meta itemprop="dateModified" content="2024-04-06T14:17:00+08:00">
+  <meta itemprop="wordCount" content="3571">
+  <meta itemprop="keywords" content="Markdown,手册"><meta property="og:url" content="http://localhost:1313/markdown/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/">
+  <meta property="og:site_name" content="Bendancom的博客">
+  <meta property="og:title" content="Markdown技术手册">
+  <meta property="og:description" content="本篇技术手册由个人汇总而成。旨在撰写Markdown时便于记忆查询">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="markdown">
+    <meta property="article:published_time" content="2023-06-18T23:00:00+08:00">
+    <meta property="article:modified_time" content="2024-04-06T14:17:00+08:00">
+    <meta property="article:tag" content="Markdown">
+    <meta property="article:tag" content="手册">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Markdown技术手册">
+  <meta name="twitter:description" content="本篇技术手册由个人汇总而成。旨在撰写Markdown时便于记忆查询">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/markdown/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C/" /><link rel="prev" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><link rel="next" href="http://localhost:1313/c&#43;&#43;/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Markdown技术手册",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/markdown\/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C\/"
+    },"genre": "markdown","keywords": "Markdown, 手册","wordcount":  3571 ,
+    "url": "http:\/\/localhost:1313\/markdown\/markdown%E6%8A%80%E6%9C%AF%E6%89%8B%E5%86%8C\/","datePublished": "2023-06-18T23:00:00+08:00","dateModified": "2024-04-06T14:17:00+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Bendancom"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Bendancom的博客"><span class="header-title-text">Bendancom的博客</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/archives/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> 归档</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容……" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Bendancom的博客"><span class="header-title-text">Bendancom的博客</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜索文章标题或内容……" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/archives/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文档</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> 归档</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="Bendancom的博客">主页</a></li><li class="breadcrumb-item"><a href="/markdown/" title="Markdowns">Markdowns</a></li><li class="breadcrumb-item active" aria-current="page">Markdown技术手册</li>
+    </ol>
+  </nav><main class="container"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Markdown技术手册</h1></div><div
+      class="content"
+      id="content"
+      
+      
+    ><p>本篇技术手册由个人汇总而成。旨在撰写<code>Markdown</code>时便于记忆查询</p>
+<h2 id="标题" class="heading-element"><span>标题</span>
+  <a href="#%e6%a0%87%e9%a2%98" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>在 <code>MarkDown</code> 中，将<code>#</code>置于开头并在其后加上一个或一个以上空格用于标记标题，<code>#</code>越多，代表标题级数越多，最多六级。</p>
+<p><code>#</code>一级标题<br>
+<code>##</code>二级标题<br>
+<code>###</code>三级标题<br>
+<code>####</code>四级标题<br>
+<code>#####</code>五级标题<br>
+<code>######</code>六级标题</p>
+<h2 id="语法" class="heading-element"><span>语法</span>
+  <a href="#%e8%af%ad%e6%b3%95" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>对于段落的判定，换行即可<br>
+部分<code>MarkDown</code>编辑器若要文字段落换行，需在换行后前一段后面加上两个或两个以上空格(如<code>VsCode</code>)。<br>
+用于标记的空格只能用半角空格。<br>
+如果想要写的美观，可以参考<a href="https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md"target="_blank" rel="external nofollow noopener noreferrer"><code>MarkDown</code>规则文档</a></p>
+<h2 id="段落样式" class="heading-element"><span>段落样式</span>
+  <a href="#%e6%ae%b5%e8%90%bd%e6%a0%b7%e5%bc%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><code>Text</code> : 文本</li>
+</ul>
+<h3 id="首行缩进" class="heading-element"><span>首行缩进</span>
+  <a href="#%e9%a6%96%e8%a1%8c%e7%bc%a9%e8%bf%9b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>不同特殊占位符所占空白是不一样大的。
+默认为不缩进。</p>
+<ul>
+<li><code>&amp;emsp;</code> 或<code>&amp;#8195;</code>  全角</li>
+<li><code>&amp;ensp;</code> 或<code>&amp;#8194;</code> 半角</li>
+<li><code>&amp;nbsp;</code> 或<code>&amp;#160;</code>  半角之半角</li>
+</ul>
+<p> 全角缩进
+ 半角缩进
+ 半角之半角缩进</p>
+<h3 id="斜体" class="heading-element"><span><em>斜体</em></span>
+  <a href="#%e6%96%9c%e4%bd%93" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在需斜体的文字两旁加上一个星号。</p>
+<p><code>*Text*</code></p>
+<h3 id="粗体" class="heading-element"><span><strong>粗体</strong></span>
+  <a href="#%e7%b2%97%e4%bd%93" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在需要粗体的文字两旁加上两个星号。</p>
+<p><code>**Text**</code></p>
+<h3 id="粗斜体" class="heading-element"><span><em><strong>粗斜体</strong></em></span>
+  <a href="#%e7%b2%97%e6%96%9c%e4%bd%93" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在需要粗斜体的文字两旁加上三个星号。</p>
+<p><code>***Text***</code></p>
+<h3 id="分隔线" class="heading-element"><span>分隔线</span>
+  <a href="#%e5%88%86%e9%9a%94%e7%ba%bf" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在一行中用三个或三个以上的星号(*)、减号(-)、底线(_)，可以在星号、减号、底线之间插入空格，数量不限。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">***
+</span></span><span class="line"><span class="cl"><span class="ge">* *</span> *
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="k">-</span> - - 
+</span></span><span class="line"><span class="cl">___
+</span></span><span class="line"><span class="cl"><span class="ge">_ _</span> _</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="删除线" class="heading-element"><span><del>删除线</del></span>
+  <a href="#%e5%88%a0%e9%99%a4%e7%ba%bf" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在需要添加删除线的文字两旁加上两个波浪线。</p>
+<p><code>~~Text~~</code></p>
+<h3 id="u下划线u" class="heading-element"><span><u>下划线</u></span>
+  <a href="#u%e4%b8%8b%e5%88%92%e7%ba%bfu" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>可以通过内联HTML的<code>&lt;u&gt;Text&lt;/u&gt;</code>标签来实现。
+据说有些<code>Markdown</code>编辑器支持<code>++Text++</code>这种。</p>
+<h3 id="背景高亮" class="heading-element"><span>==背景高亮==</span>
+  <a href="#%e8%83%8c%e6%99%af%e9%ab%98%e4%ba%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><code>==Text==</code></p>
+<h3 id="脚注" class="heading-element"><span>脚注</span>
+  <a href="#%e8%84%9a%e6%b3%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>脚注是对文本的补充说明，可以通过 <code>[^Name]</code> 标记，标记后可以在MarkDown文档任意地方进行注释。<br>
+注释方法：<code>[^Name]:Text</code></p>
+<ul>
+<li><code>Name</code> : 标记名称</li>
+<li><code>Text</code> : 注释文本</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">耄耋[^1]
+</span></span><span class="line"><span class="cl">焱[^2]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[^1]:年纪八十到九十的老人
+</span></span><span class="line"><span class="cl">[^2]:火花</span></span></code></pre></td></tr></table>
+</div>
+</div><p>耄耋<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+焱<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h2 id="列表" class="heading-element"><span>列表</span>
+  <a href="#%e5%88%97%e8%a1%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>MarkDown支持无序列表和有序列表。</p>
+<h3 id="无序列表" class="heading-element"><span>无序列表</span>
+  <a href="#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，这些标记后面要添加一个或以上空格，然后再填写内容。<br>
+同级别星号、加号、减号的混用会导致段落之间的间距的扩大。
+<code>Markdown</code>规范推荐全文只用一种符号去表示无序列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl"><span class="k">*</span> 1
+</span></span><span class="line"><span class="cl"><span class="k">*</span> 2
+</span></span><span class="line"><span class="cl"><span class="k">*</span> 3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+ 1
+</span></span><span class="line"><span class="cl">+ 2
+</span></span><span class="line"><span class="cl">+ 3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 1
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 2
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">*</span> 1
+</span></span><span class="line"><span class="cl">+ 2
+</span></span><span class="line"><span class="cl">- 3</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<ul>
+<li>1</li>
+</ul>
+<ul>
+<li>2</li>
+</ul>
+<ul>
+<li>3</li>
+</ul>
+<h3 id="有序列表" class="heading-element"><span>有序列表</span>
+  <a href="#%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>有序列表使用阿拉伯数字加上点(<code>.</code>)和一个空格表示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl"><span class="k">1.</span> 1
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 2
+</span></span><span class="line"><span class="cl">3. 3</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ol>
+<h3 id="子列表" class="heading-element"><span>子列表</span>
+  <a href="#%e5%ad%90%e5%88%97%e8%a1%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>对无序或有序列表增添缩进即可获得子列表
+同样的<code>Markdown</code>规范推荐全文只用一种符号去表示无序列表。
+无序子列表在整个层级出现三次及以上后，之后的无序子列表前的符号就相同了。
+有序子列表在整个层级出现三次及以上后，之后的有序子列表前的符号就相同了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">*</span> 1
+</span></span><span class="line"><span class="cl">  <span class="k">*</span> 2
+</span></span><span class="line"><span class="cl">    <span class="k">*</span> 3
+</span></span><span class="line"><span class="cl">      <span class="k">*</span> 4
+</span></span><span class="line"><span class="cl">        <span class="k">*</span> 5
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">1.</span> 1
+</span></span><span class="line"><span class="cl">    <span class="k">*</span> 1-1
+</span></span><span class="line"><span class="cl">        <span class="k">*</span> 1-1-1
+</span></span><span class="line"><span class="cl">    <span class="k">*</span> 1-2
+</span></span><span class="line"><span class="cl">        <span class="k">1.</span> 1.2.1
+</span></span><span class="line"><span class="cl">            <span class="k">*</span> 1-2-1-1
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 2
+</span></span><span class="line"><span class="cl">    <span class="k">1.</span> 2.1
+</span></span><span class="line"><span class="cl">    <span class="k">2.</span> 2.2
+</span></span><span class="line"><span class="cl">    <span class="k">3.</span> 2.3
+</span></span><span class="line"><span class="cl">        <span class="k">1.</span> 2.3.1
+</span></span><span class="line"><span class="cl">        <span class="k">2.</span> 2.3.2
+</span></span><span class="line"><span class="cl">        <span class="k">3.</span> 2.3.3
+</span></span><span class="line"><span class="cl">            <span class="k">1.</span> 2.3.3.1
+</span></span><span class="line"><span class="cl">            <span class="k">*</span> 2-3-3-2
+</span></span><span class="line"><span class="cl">                * 2-3-3-2-1</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>1
+<ul>
+<li>2
+<ul>
+<li>3
+<ul>
+<li>4
+<ul>
+<li>5</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>1
+<ul>
+<li>1-1
+<ul>
+<li>1-1-1</li>
+</ul>
+</li>
+<li>1-2
+<ol>
+<li>1.2.1
+<ul>
+<li>1-2-1-1</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>2
+<ol>
+<li>2.1</li>
+<li>2.2</li>
+<li>2.3
+<ol>
+<li>2.3.1</li>
+<li>2.3.2</li>
+<li>2.3.3
+<ol>
+<li>2.3.3.1</li>
+</ol>
+<ul>
+<li>2-3-3-2
+<ul>
+<li>2-3-3-2-1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="区块" class="heading-element"><span>区块</span>
+  <a href="#%e5%8c%ba%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>在段落开头加上<code>&gt;</code>符号后紧跟一个空格。<br>
+区块可嵌套，有几层嵌套前面就有几个<code>&gt;</code>符号，<code>&gt;</code>之间用一个或一个以上空格隔开，别忘用空格分开文字与区块标记。<br>
+区块可用于列表中，列表中也可以使用区块。使用方法只需标签的叠加。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">1
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span>&gt;&gt; 2
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt; 3
+</span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">1. 1
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt; </span><span class="ge">2. 2
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt; </span><span class="ge">* 2-1
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">* 1
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span>&gt;&gt; + 2
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt; - 3</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>1</p>
+<blockquote>
+<p>2</p>
+<blockquote>
+<p>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<ol>
+<li></li>
+<li></li>
+</ol>
+<ul>
+<li>2-1</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>1</li>
+</ul>
+<blockquote>
+<ul>
+<li>2</li>
+</ul>
+<blockquote>
+<ul>
+<li>3</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="代码" class="heading-element"><span>代码</span>
+  <a href="#%e4%bb%a3%e7%a0%81" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="片段代码" class="heading-element"><span>片段代码</span>
+  <a href="#%e7%89%87%e6%ae%b5%e4%bb%a3%e7%a0%81" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>可以在代码两旁添加反引号(`)向<code>MarkDown</code>表示这是代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="err">`</span><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Hellow World&#34;</span><span class="p">);</span><span class="err">`</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="代码区块" class="heading-element"><span>代码区块</span>
+  <a href="#%e4%bb%a3%e7%a0%81%e5%8c%ba%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>可以用四个空格或一个制表符(Tab)加在区块每一行开头向<code>MarkDown</code>表示这是一段代码区块。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>也可以用三个反引号(`)或三个波浪号(~)包裹代码区块，并可以指定一种语言。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">    ```C++
+</span></span><span class="line"><span class="cl">    int* p = 1;
+</span></span><span class="line"><span class="cl">    ```
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ```C#
+</span></span><span class="line"><span class="cl">    private score = 0;
+</span></span><span class="line"><span class="cl">    ```</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="链接" class="heading-element"><span>链接</span>
+  <a href="#%e9%93%be%e6%8e%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="简单链接" class="heading-element"><span>简单链接</span>
+  <a href="#%e7%ae%80%e5%8d%95%e9%93%be%e6%8e%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>使用<code>[Name](url)</code>或<code>&lt;url&gt;</code><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<ul>
+<li><code>Name</code> : 链接名字</li>
+<li><code>url</code> : 地址</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">[<span class="nt">百度</span>](<span class="na">www.baidu.com</span>)
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">www.bing.com</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="www.baidu.com">百度</a>
+&lt;www.baidu.com&gt;</p>
+<h3 id="高级链接" class="heading-element"><span>高级链接</span>
+  <a href="#%e9%ab%98%e7%ba%a7%e9%93%be%e6%8e%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>使用<code>[Name][var]</code>设置一个变量，然后使用<code>[var]:Text</code>在文档其余任意地方给变量赋上链接值。</p>
+<ul>
+<li><code>Name</code> : 标记名称</li>
+<li><code>var</code> : 变量名称</li>
+<li><code>Text</code> : 注释文本</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">[Google][1]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[1]:http://www.google.com</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="图片" class="heading-element"><span>图片</span>
+  <a href="#%e5%9b%be%e7%89%87" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>使用<code>![FailText](url &quot;title&quot; )</code>来表示图片。<br>
+也可以使用<code>![FailText][var]</code>标记，然后使用<code>[var]:url</code>在文档任意地方给变量赋上图片链接值。</p>
+<ul>
+<li><code>FailText</code> : 图片加载显示失败时显示的文本</li>
+<li><code>url</code> : 图片地址</li>
+<li><code>var</code> : 变量名称</li>
+<li><code>title</code> : 图片名称</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">![<span class="nt">Picture1</span>](<span class="na">https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2496571732,442429806&amp;fm=26&amp;gp=0.jpg &#34;title 1&#34;</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">![Picture2][1]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[1]:https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2595316365,4277938543<span class="err">&amp;</span>fm=26<span class="err">&amp;</span>gp=0.jpg &#34;title 2&#34;</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="表格" class="heading-element"><span>表格</span>
+  <a href="#%e8%a1%a8%e6%a0%bc" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="基础" class="heading-element"><span>基础</span>
+  <a href="#%e5%9f%ba%e7%a1%80" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>表格的制作使用<code>|</code>符号分隔列，使用一个或一个以上的减号(-)分隔表头和其他行，使用换行分隔行。<br>
+注意要在每行开头和结尾加上<code>|</code>表示表格。<br>
+<code>|</code>和列之间要有一个或一个以上的空格分隔。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">| Price | number |
+</span></span><span class="line"><span class="cl">| - | - |
+</span></span><span class="line"><span class="cl">| 1 | 2 |
+</span></span><span class="line"><span class="cl">| 2 | 1 |</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="对齐方式" class="heading-element"><span>对齐方式</span>
+  <a href="#%e5%af%b9%e9%bd%90%e6%96%b9%e5%bc%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>可以用下列三种格式替换减号(-)来分隔表头和其他行并表示对齐方式。<br>
+其中减号(-)同理可以一个或一个以上的数量</p>
+<ul>
+<li><code>:-</code> 设置内容和标题栏居左对齐。</li>
+<li><code>-:</code> 设置内容和标题栏居右对齐。</li>
+<li><code>:-:</code> 设置内容和标题栏居中对齐。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">| Left | Right | center |
+</span></span><span class="line"><span class="cl">| :-----| ----: | :----: |
+</span></span><span class="line"><span class="cl">| block | block | block |
+</span></span><span class="line"><span class="cl">| block | block | block |</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="高级技巧" class="heading-element"><span>高级技巧</span>
+  <a href="#%e9%ab%98%e7%ba%a7%e6%8a%80%e5%b7%a7" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="html元素" class="heading-element"><span><code>HTML</code>元素</span>
+  <a href="#html%e5%85%83%e7%b4%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>可以使用<code>HTML</code>标签。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Html" data-lang="Html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Ctrl<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>+<span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Alt<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>+<span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Del<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="转义" class="heading-element"><span>转义</span>
+  <a href="#%e8%bd%ac%e4%b9%89" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在特定字符前加上一个反斜杠使其单作为文字显示。<br>
+<code>MarkDown</code>支持以下特殊字符前加反斜杠。</p>
+<p>\   反斜线<br>
+`   反引号<br>
+*   星号<br>
+_   下划线<br>
+{}  花括号<br>
+[]  方括号<br>
+()  小括号<br>
+#   井字号<br>
++   加号<br>
+-   减号<br>
+.   英文句点<br>
+!   感叹号</p>
+<h3 id="公式" class="heading-element"><span>公式</span>
+  <a href="#%e5%85%ac%e5%bc%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>如果要在编辑器中插入公式，可以使用一个美元符号(<code>$</code>)包裹<code>TeX</code>或<code>LaTeX</code>格式的数学公式来实现。<br>
+单独显示的<code>LaTeX</code>公式用<code>$$...$$</code>定义。
+随着<code>LaTex</code>的更新<code>$</code>与<code>$$</code>不再推荐使用了，行内公式使用<code>\(</code>与<code>\)</code>包裹，行间公式使用<code>\[</code>与<code>\]</code>包裹。
+<code>MathJax</code>公式使用这里不再赘述，详情请自行搜索。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
+</span></span><span class="line"><span class="cl">\(x + 1 = y\)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$$\sum_{i=0}N\int_{a}{b}g(t,i)\text{d}t$$
+</span></span><span class="line"><span class="cl">\[x^2 + y^2 = 1\]</span></span></code></pre></td></tr></table>
+</div>
+</div><p>$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
+(x + 1 = y)
+$$\sum_{i=0}N\int_{a}{b}g(t,i)\text{d}t$$
+[x^2 + y^2 = 1]</p>
+<h3 id="流程图" class="heading-element"><span>流程图</span>
+  <a href="#%e6%b5%81%e7%a8%8b%e5%9b%be" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>本篇会简单讲解流程图的画法，若要了解其他图表的画法，可以参考
+<a href="https://blog.csdn.net/dengjin20104042056/article/details/107073187"target="_blank" rel="external nofollow noopener noreferrer">CSDN-【Tools】MarkDown教程(四)-MarkDown中的UML图</a></p>
+<p>流程图需先表示为代码块。<br>
+语言目前有三种：<code>flow</code>、<code>mermaid</code>和<code>UML</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">    ```flow
+</span></span><span class="line"><span class="cl">    Code Block
+</span></span><span class="line"><span class="cl">    ```
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ```mermaid
+</span></span><span class="line"><span class="cl">    Code Block
+</span></span><span class="line"><span class="cl">    ```
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ```sequence
+</span></span><span class="line"><span class="cl">    Code Block
+</span></span><span class="line"><span class="cl">    ```</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>Code Block</code> : 代码块</li>
+</ul>
+<h4 id="flow" class="heading-element"><span><code>flow</code></span>
+  <a href="#flow" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><code>flow</code>中流程图大致分为两部分</p>
+<ol>
+<li>定义元素</li>
+<li>定义走向</li>
+</ol>
+<h5 id="flow元素" class="heading-element"><span><code>Flow</code>元素</span>
+  <a href="#flow%e5%85%83%e7%b4%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p>语法：<code>tag=&gt;type: content:&gt;url</code><br>
+<code>type</code>后的冒号与文本之间一定要有个空格。</p>
+<ul>
+<li><code>tag</code> : 元素名称</li>
+<li><code>type</code> : 元素类型(必须小写)
+<ul>
+<li><code>start</code> : 开始</li>
+<li><code>end</code> : 结束</li>
+<li><code>operation</code> : 操作</li>
+<li><code>subroutine</code> : 子程序</li>
+<li><code>condition</code> : 条件</li>
+<li><code>input</code> : 输入</li>
+<li><code>output</code> : 输出</li>
+</ul>
+</li>
+<li><code>content</code> : 内容</li>
+<li><code>url</code> : 链接</li>
+</ul>
+<h5 id="连接flow元素" class="heading-element"><span>连接<code>Flow</code>元素</span>
+  <a href="#%e8%bf%9e%e6%8e%a5flow%e5%85%83%e7%b4%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p>用<code>-&gt;</code>来连接两个元素  形成一个流程。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">Element1-&gt;Element2-&gt;Element3</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>condition</code>类型有两个分支，所以要分为两个流程。<br>
+括号内的<code>yes/no</code>必须小写</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">c1(yes)-&gt;Enement1
+</span></span><span class="line"><span class="cl">c2(no)-&gt;Element2</span></span></code></pre></td></tr></table>
+</div>
+</div><p>若在连接元素后加上<code>(left)</code>/<code>(right)</code>/<code>(top)</code>/<code>(buttom)</code>即表示：相对该元素向左/右/上/下延伸</p>
+<h5 id="flow示例" class="heading-element"><span><code>Flow</code>示例</span>
+  <a href="#flow%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">s1=&gt;start: Start
+</span></span><span class="line"><span class="cl">e1=&gt;end: First End
+</span></span><span class="line"><span class="cl">e2=&gt;end: Second End
+</span></span><span class="line"><span class="cl">c1=&gt;condition: choose
+</span></span><span class="line"><span class="cl">o1=&gt;operation: operate
+</span></span><span class="line"><span class="cl">s1-&gt;c1(yes)-&gt;e1
+</span></span><span class="line"><span class="cl">c1(no)-&gt;o1(right)-&gt;e2</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">    ```flow
+</span></span><span class="line"><span class="cl">    s1=&gt;start: Start
+</span></span><span class="line"><span class="cl">    e1=&gt;end: First End
+</span></span><span class="line"><span class="cl">    e2=&gt;end: Second End
+</span></span><span class="line"><span class="cl">    c1=&gt;condition: choose
+</span></span><span class="line"><span class="cl">    o1=&gt;operation: operate
+</span></span><span class="line"><span class="cl">    s1-&gt;c1(yes)-&gt;e1
+</span></span><span class="line"><span class="cl">    c1(no)-&gt;o1(right)-&gt;e2
+</span></span><span class="line"><span class="cl">    ```</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="mermaid" class="heading-element"><span><code>mermaid</code></span>
+  <a href="#mermaid" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><code>mermaid</code>中流程图元素是边定义边连接的。<br>
+但在此之前需先定义是横向还是纵向。<br>
+定义语法：<code>graph type</code></p>
+<ul>
+<li>type : 类型
+<ul>
+<li>LR : 横向</li>
+<li>TD : 纵向</li>
+</ul>
+</li>
+</ul>
+<p>不同于<code>flow</code>，最后的结尾需换行打<code>end</code>。</p>
+<h5 id="mermaid元素" class="heading-element"><span><code>Mermaid</code>元素</span>
+  <a href="#mermaid%e5%85%83%e7%b4%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><code>Element</code> : <code>Name</code> <code>Symbol1</code> <code>Text</code> <code>Symbol2</code><br>
+类似于夹心饼干，或者说颜文字</p>
+<ul>
+<li><code>Element</code> : 元素</li>
+<li><code>Name</code> : 元素名称</li>
+<li><code>Symbol1</code> : 元素形状开头标记，需与结尾标记对应
+<ul>
+<li><code>[</code> 矩形</li>
+<li><code>(</code> 圆角矩形</li>
+<li><code>{</code> 菱形</li>
+<li><code>&gt;</code> 右向旗帜</li>
+<li><code>((</code> 圆形</li>
+</ul>
+</li>
+<li><code>Text</code> : 文本</li>
+<li><code>Symbol2</code> : 元素形状结尾标记，需与开头标记对应
+<ul>
+<li><code>]</code> 矩形</li>
+<li><code>)</code> 圆角矩形</li>
+<li><code>}</code> 菱形</li>
+<li><code>]</code> 右向旗帜</li>
+<li><code>))</code> 圆形</li>
+</ul>
+</li>
+</ul>
+<h5 id="连接mermaid元素" class="heading-element"><span>连接<code>Mermaid</code>元素</span>
+  <a href="#%e8%bf%9e%e6%8e%a5mermaid%e5%85%83%e7%b4%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p>连接语法：<code>Element1</code> <code>Symbol1</code> <code>Text</code> <code>Symbol2</code> <code>Element2</code><br>
+连接两个元素</p>
+<ul>
+<li><code>Element1</code> : 连接的起点元素</li>
+<li><code>Symbol1</code> : 开始符号，需与结束符号对应
+<ul>
+<li><code>==</code> : 粗线</li>
+<li><code>-.</code> : 细线</li>
+<li><code>--</code> : 无箭头</li>
+</ul>
+</li>
+<li><code>Text</code> : 文本</li>
+<li><code>Symbol2</code> : 结束符号，需与开始符号对应
+<ul>
+<li><code>==</code> : 粗线</li>
+<li><code>-.</code> : 细线</li>
+<li><code>--</code> : 无箭头</li>
+</ul>
+</li>
+<li><code>Element2</code> : 连接的终点元素</li>
+</ul>
+<h5 id="mermaid示例" class="heading-element"><span><code>Mermaid</code>示例</span>
+  <a href="#mermaid%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><pre class="mermaid">graph TD
+id1(圆角矩形)--普通线-->id2[矩形];
+subgraph 子图
+id2==粗线==>id3{菱形}
+id3-.虚线.->id4>右向旗帜]
+id3--无箭头---id5((圆形))
+end
+</pre>
+<template>graph TD
+id1(圆角矩形)--普通线-->id2[矩形];
+subgraph 子图
+id2==粗线==>id3{菱形}
+id3-.虚线.->id4>右向旗帜]
+id3--无箭头---id5((圆形))
+end</template><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-MarkDown" data-lang="MarkDown"><span class="line"><span class="cl">    ```mermaid
+</span></span><span class="line"><span class="cl">    graph TD
+</span></span><span class="line"><span class="cl">    id1(圆角矩形)--普通线--&gt;id2[矩形];
+</span></span><span class="line"><span class="cl">    subgraph 子图
+</span></span><span class="line"><span class="cl">    id2==粗线==&gt;id3{菱形}
+</span></span><span class="line"><span class="cl">    id3-.虚线.-&gt;id4&gt;右向旗帜]
+</span></span><span class="line"><span class="cl">    id3--无箭头---id5((圆形))
+</span></span><span class="line"><span class="cl">    end
+</span></span><span class="line"><span class="cl">    ```</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="待办事项todo" class="heading-element"><span>待办事项(Todo)</span>
+  <a href="#%e5%be%85%e5%8a%9e%e4%ba%8b%e9%a1%b9todo" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>语法：<code>- [ ] 文本</code> 或 <code>- [X] 文本</code>，X不限大小写<br>
+X代表已完成</p>
+<h4 id="案例" class="heading-element"><span>案例</span>
+  <a href="#%e6%a1%88%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><ul>
+<li><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 未完成</li>
+<li><i class="fa-regular fa-check-square fa-fw" aria-hidden="true"></i> 已完成</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Markdown" data-lang="Markdown"><span class="line"><span class="cl"><span class="k">- [ ]</span> 未完成
+</span></span><span class="line"><span class="cl">- [x] 已完成</span></span></code></pre></td></tr></table>
+</div>
+</div><p>参考网址：<br>
+[1] <a href="https://www.runoob.com/markdown/md-tutorial.html"target="_blank" rel="external nofollow noopener noreferrer">菜鸟教程</a><br>
+[2] <a href="https://www.jianshu.com/p/a0aa94ef8ab2"target="_blank" rel="external nofollow noopener noreferrer">简书.ColdRomantic.在Markdown中输入数学公式</a><br>
+[3] <a href="https://www.jianshu.com/p/02a5a1bf1096"target="_blank" rel="external nofollow noopener noreferrer">简书.Jlan.用markdown`来画流程图</a><br>
+[4] <a href="https://www.jianshu.com/p/fd761fc43753"target="_blank" rel="external nofollow noopener noreferrer">简书.VsCode支持的markdown语法参考</a><br>
+[5] <a href="https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md"target="_blank" rel="external nofollow noopener noreferrer">MarkDown规则</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>年纪八十到九十的老人&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>火花&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>不是所有<code>Markdown</code>编辑器都支持&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.133.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">Bendancom</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">该网站在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.mermaid = mermaid;
+    window.mermaid.themes = ["default","dark"];
+  </script><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.8-RC"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

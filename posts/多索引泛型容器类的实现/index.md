@@ -885,6 +885,7 @@ public:
 \[1]:[泡沫o0.【C&#43;&#43; 包装器类 std::reference_wrapper 】全面指南：深入理解与应用C&#43;&#43; std::reference_wrapper——从基础教程到实际案例分析[EB/OL].CSDN.2023/09/26.https://blog.csdn.net/qq_21438461/article/details/131297103](https://blog.csdn.net/qq_21438461/article/details/131297103)  
 \[2]:[下学期上五年级.Modern C&#43;&#43; 学习笔记（20）——高级模板[EB/OL].知乎.2023/06/10.https://zhuanlan.zhihu.com/p/636178655](https://zhuanlan.zhihu.com/p/636178655)
 
+
 ---
 
 > 作者: Bendancom  
