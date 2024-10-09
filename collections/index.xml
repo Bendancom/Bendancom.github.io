@@ -1,8 +1,14 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collections - 合集 - Bendancom的博客</title>
     <link>https://bendancom.github.io/collections/</link>
-    <description>Collections - 合集 | Bendancom的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
-      <webMaster>bendancom@qq.com (Bendancom)</webMaster><atom:link href="https://bendancom.github.io/collections/" rel="self" type="application/rss+xml" /></channel>
+    <description>Bendancom&#39;s Blog</description>
+    <generator>Hugo 0.135.0 &amp; FixIt v0.3.13-9c440df3</generator>
+    <language>zh-CN</language>
+    <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
+    <webMaster>bendancom@qq.com (Bendancom)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://bendancom.github.io/collections/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>

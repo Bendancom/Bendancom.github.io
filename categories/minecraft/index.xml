@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minecraft - 标签 - Bendancom的博客</title>
-    <link>https://bendancom.github.io/tags/minecraft/</link>
+    <title>Minecraft - 分类 - Bendancom的博客</title>
+    <link>https://bendancom.github.io/categories/minecraft/</link>
     <description>Bendancom&#39;s Blog</description>
     <generator>Hugo 0.135.0 &amp; FixIt v0.3.13-9c440df3</generator>
     <language>zh-CN</language>
     <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
     <webMaster>bendancom@qq.com (Bendancom)</webMaster>
     <lastBuildDate>Sat, 06 Apr 2024 13:53:00 +0800</lastBuildDate>
-    <atom:link href="https://bendancom.github.io/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bendancom.github.io/categories/minecraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何建立一个Java版Minecraft服务器</title>
       <link>https://bendancom.github.io/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>

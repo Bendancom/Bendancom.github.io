@@ -1,24 +1,35 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories - 分类 - Bendancom的博客</title>
     <link>https://bendancom.github.io/categories/</link>
-    <description>Categories - 分类 | Bendancom的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
-      <webMaster>bendancom@qq.com (Bendancom)</webMaster><lastBuildDate>Mon, 12 Aug 2024 23:00:00 &#43;0800</lastBuildDate><atom:link href="https://bendancom.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-  <title>C&#43;&#43;</title>
-  <link>https://bendancom.github.io/categories/c&#43;&#43;/</link>
-  <pubDate>Mon, 12 Aug 2024 23:00:00 &#43;0800</pubDate>
-  <author>Bendancom</author>
-  <guid>https://bendancom.github.io/categories/c&#43;&#43;/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Markdown</title>
-  <link>https://bendancom.github.io/categories/markdown/</link>
-  <pubDate>Sun, 18 Jun 2023 23:00:00 &#43;0800</pubDate>
-  <author>Bendancom</author>
-  <guid>https://bendancom.github.io/categories/markdown/</guid>
-  <description><![CDATA[]]></description>
-</item>
-</channel>
+    <description>Bendancom&#39;s Blog</description>
+    <generator>Hugo 0.135.0 &amp; FixIt v0.3.13-9c440df3</generator>
+    <language>zh-CN</language>
+    <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
+    <webMaster>bendancom@qq.com (Bendancom)</webMaster>
+    <lastBuildDate>Wed, 09 Oct 2024 22:45:00 +0800</lastBuildDate>
+    <atom:link href="https://bendancom.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://bendancom.github.io/categories/c&#43;&#43;/</link>
+      <pubDate>Mon, 12 Aug 2024 23:00:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/categories/c&#43;&#43;/</guid>
+      <description>C++</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://bendancom.github.io/categories/markdown/</link>
+      <pubDate>Sun, 18 Jun 2023 23:00:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/categories/markdown/</guid>
+      <description>Markdown</description>
+    </item>
+    <item>
+      <title>Minecraft</title>
+      <link>https://bendancom.github.io/categories/minecraft/</link>
+      <pubDate>Sun, 18 Jun 2023 23:00:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/categories/minecraft/</guid>
+      <description>Minecraft</description>
+    </item>
+  </channel>
 </rss>

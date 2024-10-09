@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
     <title>单位库实现 - Bendancom的博客</title><meta name="author" content="Bendancom">
-<meta name="author-link" content="">
-<meta name="description" content="在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。" /><meta name="keywords" content='C&#43;&#43;, Physical, Unit' />
+<meta name="description" content="在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。"><meta name="keywords" content='C&#43;&#43;, Physical, Unit'>
   <meta itemprop="name" content="单位库实现">
   <meta itemprop="description" content="在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。">
   <meta itemprop="datePublished" content="2024-08-12T23:00:00+08:00">
@@ -32,7 +31,7 @@
   <meta name="twitter:title" content="单位库实现">
   <meta name="twitter:description" content="在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。">
 <meta name="application-name" content="FixIt">
-<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://bendancom.github.io/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://bendancom.github.io/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/" title="单位库实现 - Bendancom的博客" /><link rel="prev" type="text/html" href="https://bendancom.github.io/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="多索引泛型容器类的实现" /><link rel="alternate" type="text/markdown" href="https://bendancom.github.io/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/index.md" title="单位库实现 - Bendancom的博客"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -51,8 +50,8 @@
         "name": "Bendancom"
       },"description": ""
   }
-  </script></head>
-  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
       <a href="/" title="Bendancom的博客"><span class="header-title-text">Bendancom的博客</span></a><span class="header-subtitle"></span></div>
@@ -149,7 +148,7 @@
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><nav aria-label="breadcrumb" class="breadcrumb-container">
-    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="Bendancom的博客">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">文章</a></li><li class="breadcrumb-item active" aria-current="page">单位库实现</li>
+    <ol class="breadcrumb"><li class="breadcrumb-item" data-separator="/"><a href="/" title="Bendancom的博客">主页</a></li><li class="breadcrumb-item" data-separator="/"><a href="/posts/" title="Posts">文章</a></li><li class="breadcrumb-item active" data-separator="/" aria-current="page">单位库实现</li>
     </ol>
   </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
 
@@ -1296,9 +1295,7 @@ $$<p>现在再来考虑温度，在温度量纲指数为 $1$ 时，温度单位�
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
-  </div>
-
-  <div class="post-nav"><a href="/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="post-nav-item" rel="prev" title="多索引泛型容器类的实现"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>多索引泛型容器类的实现</a></div>
+  </div><div class="post-nav"><a href="/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="post-nav-item" rel="prev" title="多索引泛型容器类的实现"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>多索引泛型容器类的实现</a></div>
 </div>
 <div id="comments"><div id="giscus" class="comment">
           <script
@@ -1319,9 +1316,7 @@ $$<p>现在再来考虑温度，在温度量纲指数为 $1$ 时，温度单位�
             crossorigin="anonymous"
             async
             defer
-          >
-          document.querySelector("#giscus>script").setAttribute("data-theme",this.isDark ? "dark" : "light");
-        </script>
+          ></script>
         </div>
         <noscript>
           Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
@@ -1329,7 +1324,7 @@ $$<p>现在再来考虑温度，在温度量纲指数为 $1$ 时，温度单位�
 
   <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.135.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.135.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.13-9c440df3"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
               <a href="/">Bendancom</a></span></div></div>
@@ -1338,5 +1333,5 @@ $$<p>现在再来考虑温度，在温度量纲指数为 $1$ 时，温度单位�
     <div class="noscript-warning">该网站在启用 JavaScript 的情况下效果最佳。</div>
   </noscript>
 </div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light","origin":"https://giscus.app"}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.8-RC"};</script><script src="/js/theme.min.js" defer></script></body>
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light","origin":"https://giscus.app"}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":30,"threshold":0.3,"useExtendedSearch":false},"version":"v0.3.13-9c440df3"};</script><script src="/js/theme.min.js" defer></script></body>
 </html>
