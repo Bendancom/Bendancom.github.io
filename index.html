@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
   <head>
-	<meta name="generator" content="Hugo 0.133.0">
+	<meta name="generator" content="Hugo 0.135.0">
     
       <meta name="theme" content='FixIt v0.3.8-RC'>
     
@@ -14,7 +14,7 @@
   <meta itemprop="name" content="Bendancom的博客">
   <meta itemprop="description" content="Bendancom&#39;s Blog">
   <meta itemprop="datePublished" content="2024-08-12T23:00:00+08:00">
-  <meta itemprop="dateModified" content="2024-06-17T23:00:00+08:00"><meta property="og:url" content="https://bendancom.github.io/">
+  <meta itemprop="dateModified" content="2024-10-09T22:45:00+08:00"><meta property="og:url" content="https://bendancom.github.io/">
   <meta property="og:site_name" content="Bendancom的博客">
   <meta property="og:title" content="Bendancom的博客">
   <meta property="og:description" content="Bendancom&#39;s Blog">
@@ -139,6 +139,10 @@
     </a><a href="mailto:bendancom@qq.com" title="Email"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i>
     </a><a href="/index.xml" title="RSS"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-rss fa-fw" aria-hidden="true"></i>
     </a></div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h2 class="single-title" itemprop="name headline"><a href="/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/">单位库实现</a>
+  </h2><div class="post-meta"><span class="post-author"><span class="author"><img loading="lazy" src="https://www.gravatar.com/avatar/be07dd576d81553f37f78446377ea4a0?s=32&amp;d=" alt="Bendancom" data-title="Bendancom" width="20" height="20" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Bendancom</span></span>&nbsp;<span class="post-publish" title='2024-08-12 23:00:00'>发布于 <time datetime="2024-08-12">2024-08-12</time></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/c++/" class="post-category" title="分类 - C++"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> C++</a></span></div><div class="content"><p>在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。</p></div><div class="post-footer">
+    <a href="/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/">阅读全文</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/c&#43;&#43;/' class="post-tag">C&#43;&#43;</a><a href='/tags/physics/' class="post-tag">Physics</a><a href='/tags/unit/' class="post-tag">Unit</a><a href='/tags/%E5%8D%95%E4%BD%8D/' class="post-tag">单位</a><a href='/tags/%E7%89%A9%E7%90%86/' class="post-tag">物理</a></div></div>
+</article>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h2 class="single-title" itemprop="name headline"><a href="/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">多索引泛型容器类的实现</a>
   </h2><div class="post-meta"><span class="post-author"><span class="author"><img loading="lazy" src="https://www.gravatar.com/avatar/be07dd576d81553f37f78446377ea4a0?s=32&amp;d=" alt="Bendancom" data-title="Bendancom" width="20" height="20" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Bendancom</span></span>&nbsp;<span class="post-publish" title='2024-06-08 23:00:00'>发布于 <time datetime="2024-06-08">2024-06-08</time></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/c++/" class="post-category" title="分类 - C++"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> C++</a></span></div><div class="content"><p><code>C++</code>中实现了单映射<code>STL</code>容器<code>std::map</code>，但实际业务中需要的是多映射类型的对任意数据的快速查找。虽可以使用多个<code>std::map</code>，但这对空间浪费过大，因而作者自行实现一个简易的多索引泛型容器库。</p></div><div class="post-footer">
     <a href="/posts/%E5%A4%9A%E7%B4%A2%E5%BC%95%E6%B3%9B%E5%9E%8B%E5%AE%B9%E5%99%A8%E7%B1%BB%E7%9A%84%E5%AE%9E%E7%8E%B0/">阅读全文</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/c&#43;&#43;/' class="post-tag">C&#43;&#43;</a><a href='/tags/multi/' class="post-tag">Multi</a><a href='/tags/index/' class="post-tag">Index</a><a href='/tags/range/' class="post-tag">Range</a><a href='/tags/concepts/' class="post-tag">Concepts</a></div></div>
@@ -152,7 +156,7 @@
     <a href="/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAjava%E7%89%88minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/">阅读全文</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/minecraft/' class="post-tag">Minecraft</a><a href='/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/' class="post-tag">服务器</a></div></div>
 </article>
 </div></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.133.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.135.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
               <a href="/">Bendancom</a></span></div></div>

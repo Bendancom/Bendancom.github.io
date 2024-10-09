@@ -11,8 +11,8 @@
   <meta itemprop="name" content="单位库实现">
   <meta itemprop="description" content="在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。">
   <meta itemprop="datePublished" content="2024-08-12T23:00:00+08:00">
-  <meta itemprop="dateModified" content="2024-06-17T23:00:00+08:00">
-  <meta itemprop="wordCount" content="1450">
+  <meta itemprop="dateModified" content="2024-10-09T22:45:00+08:00">
+  <meta itemprop="wordCount" content="4324">
   <meta itemprop="keywords" content="C&#43;&#43;,Physical,Unit"><meta property="og:url" content="https://bendancom.github.io/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/">
   <meta property="og:site_name" content="Bendancom的博客">
   <meta property="og:title" content="单位库实现">
@@ -21,7 +21,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-08-12T23:00:00+08:00">
-    <meta property="article:modified_time" content="2024-06-17T23:00:00+08:00">
+    <meta property="article:modified_time" content="2024-10-09T22:45:00+08:00">
     <meta property="article:tag" content="C&#43;&#43;">
     <meta property="article:tag" content="Physics">
     <meta property="article:tag" content="Unit">
@@ -43,8 +43,8 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/bendancom.github.io\/posts\/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0\/"
-    },"genre": "posts","keywords": "C\u002b\u002b, Physics, Unit, 单位, 物理","wordcount":  1450 ,
-    "url": "https:\/\/bendancom.github.io\/posts\/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-08-12T23:00:00+08:00","dateModified": "2024-06-17T23:00:00+08:00","publisher": {
+    },"genre": "posts","keywords": "C\u002b\u002b, Physics, Unit, 单位, 物理","wordcount":  4324 ,
+    "url": "https:\/\/bendancom.github.io\/posts\/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-08-12T23:00:00+08:00","dateModified": "2024-10-09T22:45:00+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -156,7 +156,7 @@
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>单位库实现</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><span class="author"><img loading="lazy" src="https://www.gravatar.com/avatar/be07dd576d81553f37f78446377ea4a0?s=32&amp;d=" alt="Bendancom" data-title="Bendancom" width="20" height="20" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Bendancom</span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/c++/" class="post-category" title="分类 - C++"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> C++</a></span></div><div class="post-meta-line"><span title="发布于 2024-08-12 23:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-08-12">2024-08-12</time></span>&nbsp;<span title="更新于 2024-06-17 23:00:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-06-17">2024-06-17</time></span>&nbsp;<span title="1450 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1500 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;</div>
+      <div class="post-meta-line"><span class="post-author"><span class="author"><img loading="lazy" src="https://www.gravatar.com/avatar/be07dd576d81553f37f78446377ea4a0?s=32&amp;d=" alt="Bendancom" data-title="Bendancom" width="20" height="20" class="avatar" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&nbsp;Bendancom</span></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/c++/" class="post-category" title="分类 - C++"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> C++</a></span></div><div class="post-meta-line"><span title="发布于 2024-08-12 23:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-08-12">2024-08-12</time></span>&nbsp;<span title="更新于 2024-10-09 22:45:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-10-09">2024-10-09</time></span>&nbsp;<span title="4324 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 4400 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 9 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -169,17 +169,64 @@
     <li><a href="#实现思路">实现思路</a>
       <ul>
         <li><a href="#头文件使用">头文件使用</a></li>
-        <li><a href="#量纲">量纲</a>
+        <li><a href="#量纲">量纲</a></li>
+      </ul>
+    </li>
+    <li><a href="#实现">实现</a>
+      <ul>
+        <li><a href="#数学">数学</a>
           <ul>
-            <li><a href="#量纲核心">量纲核心</a>
+            <li><a href="#约束">约束</a></li>
+            <li><a href="#幂函数">幂函数</a></li>
+          </ul>
+        </li>
+        <li><a href="#基类量纲单位">基类（量纲单位）</a>
+          <ul>
+            <li><a href="#基类数据">基类数据</a></li>
+            <li><a href="#基类函数">基类函数</a></li>
+          </ul>
+        </li>
+        <li><a href="#单位制词头结构">单位制词头结构</a>
+          <ul>
+            <li><a href="#单位制词头">单位制词头</a></li>
+            <li><a href="#结构函数">结构函数</a></li>
+          </ul>
+        </li>
+        <li><a href="#单位类">单位类</a>
+          <ul>
+            <li><a href="#类型别名">类型别名</a></li>
+            <li><a href="#数据类型">数据类型</a></li>
+            <li><a href="#模板类型转换">模板类型转换</a></li>
+            <li><a href="#初始化">初始化</a>
               <ul>
-                <li><a href="#基类">基类</a></li>
+                <li><a href="#初始化约束">初始化约束</a></li>
               </ul>
             </li>
           </ul>
         </li>
+        <li><a href="#尺度计算">尺度计算</a></li>
+        <li><a href="#错误定义">错误定义</a></li>
+        <li><a href="#加减">加减</a>
+          <ul>
+            <li><a href="#加减函数">加减函数</a></li>
+            <li><a href="#加减运算符">加减运算符</a></li>
+          </ul>
+        </li>
+        <li><a href="#乘">乘</a>
+          <ul>
+            <li><a href="#乘法函数">乘法函数</a></li>
+            <li><a href="#乘法运算符">乘法运算符</a></li>
+          </ul>
+        </li>
+        <li><a href="#除">除</a>
+          <ul>
+            <li><a href="#除法函数">除法函数</a></li>
+            <li><a href="#除法运算符">除法运算符</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#todo">TODO</a></li>
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p>在现实世界中的物理规律都需要物理单位，相较于直接进行数字的计算，带有物理量的计算可进行量纲校验与单位换算。其中有两类，其一是静态实现，在编译期进行校验，另一种是动态实现，在运行期进行校验。为将两种方法的优点进行统一，便自行开发单位库。</p>
@@ -189,51 +236,50 @@
   </a>
 </h2><ul>
 <li>线性代数（关于线性空间的变换）</li>
-<li>一丢丢英语</li>
+<li>一些英语，有翻译也可（编程必须，不然容易看不懂变量）</li>
 <li>C++23</li>
 </ul>
 <h2 id="数学理解" class="heading-element"><span>数学理解</span>
   <a href="#%e6%95%b0%e5%ad%a6%e7%90%86%e8%a7%a3" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><p>对于相同指数下的单位的变换，可认为是一个基于一种单位基底的线性空间到另一种单位基底的线性空间的线性变换
-若对基进行变换，由于绝大部分物理单位间的变换都是线性变换，只有一个量纲下的物理量是仿射变换(说的就是你，温度)，先考虑绝大多数，那么可直接乘以一个变换矩阵，得到由新的基组成的单位。
-但该前提是所有量纲的指数都是 (1)，或者说，在一个量纲中，不同的指数有不同的尺规。
-如 (\mathrm{in}) 到 (\mathrm{m}) 的尺规是 0.0254，但 (\mathrm{in}^{2}) 到 (\mathrm{m}^{2}) 的尺规是 (6.4516(2.54^{2}))。
-同时单位制词头的不同也带来了不同的尺规，(\mathrm{m}) 到 (\mathrm{km}) 的尺规为 (1000)，(\mathrm{m}^{2}) 到 (\mathrm{km}^{2}) 的尺规为 (1000,000)</p>
-<p>[
-\begin{align}
-\boldsymbol{x}&rsquo; &amp;= \operatorname{diag}(m_{1,1}^{p_{1,1}}c_{1,1}^{p_{1,1}}x_{1,1},\cdots,m_{n,n}^{p_{n,n}}c_{n,n}^{p_{n,n}}x_{n,n})\notag \
-&amp;= \operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}] \boldsymbol{x}\notag
-\end{align}
-]
+</h2><p>对于相同指数下的单位的变换，可认为是一个基于一种单位基底的线性空间到另一种单位基底的线性空间的线性变换。<br>
+若对基进行变换，由于绝大部分物理单位间的变换都是线性变换，只有一个量纲下的物理量是仿射变换(说的就是你，温度)，先考虑绝大多数，那么可直接乘以一个变换矩阵，得到由新的基组成的单位。<br>
+但该前提是所有量纲的指数都是 $1$，或者说，在一个量纲中，不同的指数有不同的尺规。
+如 $\mathrm{in}$ 到 $\mathrm{m}$ 的尺规是 0.0254，但 $\mathrm{in}^{2}$ 到 $\mathrm{m}^{2}$ 的尺规是 $6.4516(2.54^{2})$。<br>
+同时单位制词头的不同也带来了不同的尺规，$\mathrm{m}$ 到 $\mathrm{km}$ 的尺规为 $1000$，$\mathrm{m}^{2}$ 到 $\mathrm{km}^{2}$ 的尺规为 $1000,000$</p>
+$$
+    \begin{align}
+    \boldsymbol{x}' &= \operatorname{diag}(m_{1,1}^{p_{1,1}}c_{1,1}^{p_{1,1}}x_{1,1},\cdots,m_{n,n}^{p_{n,n}}c_{n,n}^{p_{n,n}}x_{n,n})\notag \\ 
+    &= \operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}] \boldsymbol{x}\notag
+    \end{align}
+$$<p>
 其中：</p>
 <ul>
-<li>(\boldsymbol{p}) 用对角矩阵表示的各量纲的指数，其中元素为 (p_{i,j})</li>
-<li>(\boldsymbol{x}) 原量纲单位的对角矩阵，其中元素为 (x_{i,j})</li>
-<li>(\boldsymbol{m}) 单位制词头的对角矩阵，在量纲指数为 (1) 下的尺规，其中元素为 (m_{i,j})</li>
-<li>(\boldsymbol{c}) 变换的对角矩阵，在量纲指数为 (1) 下的尺规，其中元素为 (c_{i,j})</li>
-<li>(\boldsymbol{x}&rsquo;) 现量纲的对角矩阵，其中元素为 (x_{i,j}^{\prime})</li>
-<li>(n) 代表维度数</li>
+<li>$\boldsymbol{p}$ 用对角矩阵表示的各量纲的指数，其中元素为 $p_{i,j}$</li>
+<li>$\boldsymbol{x}$ 原量纲单位的对角矩阵，其中元素为 $x_{i,j}$</li>
+<li>$\boldsymbol{m}$ 单位制词头的对角矩阵，在量纲指数为 $1$ 下的尺规，其中元素为 $m_{i,j}$</li>
+<li>$\boldsymbol{c}$ 变换的对角矩阵，在量纲指数为 $1$ 下的尺规，其中元素为 $c_{i,j}$</li>
+<li>$\boldsymbol{x}'$ 现量纲的对角矩阵，其中元素为 $x_{i,j}^{\prime}$</li>
+<li>$n$ 代表维度数</li>
 </ul>
 <p>对其求行列式可得：</p>
-<p>[
-\begin{align}
-|\boldsymbol{x}&rsquo;| &amp;= |\operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}]| \cdot |\boldsymbol{x}| \notag \
-\frac{|\boldsymbol{x}&rsquo;|}{|\boldsymbol{x}|} &amp;= |\operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}]| \notag\
-\frac{|\boldsymbol{x}&rsquo;|}{|\boldsymbol{x}|} &amp;= \prod_{i=1}^{n}(m_{i,i}c_{i,i})^{p_{i,i}} \notag
-\end{align}
-]</p>
-<p>现在再来考虑温度，在温度量纲指数为 (1) 时，温度单位的变换为不过原点的一次函数。因而最好的就是只有一个单位：开尔文(K)。</p>
+$$
+    \begin{align}
+    |\boldsymbol{x}'| &= |\operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}]| \cdot |\boldsymbol{x}| \notag \\
+    \frac{|\boldsymbol{x}'|}{|\boldsymbol{x}|} &= |\operatorname{diag}[(m_{1,1}c_{1,1})^{p_{1,1}},\cdots,(m_{n,n}c_{n,n})^{p_{n,n}}]| \notag\\
+    \frac{|\boldsymbol{x}'|}{|\boldsymbol{x}|} &= \prod_{i=1}^{n}(m_{i,i}c_{i,i})^{p_{i,i}} \notag
+    \end{align}
+$$<p>现在再来考虑温度，在温度量纲指数为 $1$ 时，温度单位的变换为不过原点的一次函数。因而最好的就是只有一个单位：开尔文(K)。</p>
 <ul>
 <li>在温度仅表示温差这一含义时，可忽略温差，只看温标。</li>
 <li>在仅有温度这一量纲时，需同时看温标与温差。</li>
 </ul>
-<p>因而，在只有温度量纲且指数为(1) 时，允许从开尔文 (\Longleftrightarrow) 其他温度单位的转换。</p>
+<p>因而，在只有温度量纲且指数为$1$ 时，允许从开尔文 $\Longleftrightarrow$ 其他温度单位的转换。</p>
 <p>那么有两种实现方法：</p>
 <ol>
-<li>将量纲线性空间扩展为 (n+1) 维。</li>
-<li>单列在一次量纲的温度变换，，在温度量纲中只有开尔文，如同物质的量只有摩尔一样。</li>
+<li>将量纲线性空间扩展为 $n+1$ 维。</li>
+<li>单列在一次量纲的温度变换，在温度量纲中只有开尔文，如同物质的量只有摩尔一样。</li>
 </ol>
 <p>本库采用方法 2</p>
 <h2 id="实现思路" class="heading-element"><span>实现思路</span>
@@ -252,34 +298,36 @@
   </a>
 </h3><ul>
 <li><code>&lt;concepts&gt;</code></li>
-<li><code>&lt;stdfloat&gt;</code></li>
+<li><code>&lt;stdfloat&gt;</code> 可选，若觉得<code>float</code>过大可使用<code>float16_t</code></li>
 </ul>
 <h3 id="量纲" class="heading-element"><span>量纲</span>
   <a href="#%e9%87%8f%e7%ba%b2" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h3><p>量纲是复杂的，尤其是将静态与动态相结合的同时要有高扩展性。</p>
-<h4 id="量纲核心" class="heading-element"><span>量纲核心</span>
-  <a href="#%e9%87%8f%e7%ba%b2%e6%a0%b8%e5%bf%83" class="heading-mark">
-    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
-  </a>
-</h4><ul>
-<li>量纲类型</li>
+</h3><p>量纲是复杂的，尤其是将静态与动态相结合的同时要有高扩展性。
+在这里本人是将单位制词头与单位拆分，这样便于扩展，不用再实现同一单位的不同单位制词头。</p>
+<ul>
+<li>量纲类型
+<ul>
+<li>单位制词头</li>
+<li>量纲单位</li>
+</ul>
+</li>
 <li>指数</li>
 </ul>
-<h5 id="基类" class="heading-element"><span>基类</span>
-  <a href="#%e5%9f%ba%e7%b1%bb" class="heading-mark">
+<h2 id="实现" class="heading-element"><span>实现</span>
+  <a href="#%e5%ae%9e%e7%8e%b0" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h5><p>基类是一切扩展性的根源，要保留有最高的扩展性，因而使用模板进行定义：
-其中应至少含有</p>
-<ul>
-<li>尺规(<code>magnitude</code>)，要求范围为有理数(\mathbb{Q})</li>
-<li>指数(<code>power</code>)，要求范围为整数(\mathbb{Z})<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
-<li>简名(<code>short_name</code>)，要求为字符串</li>
-<li>量纲简名(<code>dimension_short_name</code>)，要求为字符串</li>
-</ul>
-<p>为此定义约束(<code>concept</code>)：</p>
+</h2><h3 id="数学" class="heading-element"><span>数学</span>
+  <a href="#%e6%95%b0%e5%ad%a6" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 id="约束" class="heading-element"><span>约束</span>
+  <a href="#%e7%ba%a6%e6%9d%9f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>定义数的约束(<code>concept</code>)：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -293,21 +341,223 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="k">concept</span> <span class="n">rational</span> <span class="o">=</span> <span class="k">requires</span> <span class="p">(</span><span class="n">T</span> <span class="n">x</span><span class="p">,</span> <span class="n">T</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="p">}</span>  <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="n">x</span><span class="o">*</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="n">x</span> <span class="o">/</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">-=</span> <span class="n">y</span><span class="p">}</span>  <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">*=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">/=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="o">-</span><span class="n">x</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">same_as</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="nf">T</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="n">T</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="n">T</span><span class="p">(</span><span class="mf">1.5</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">totally_ordered</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
 </div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">concept</span> <span class="n">integral</span> <span class="o">=</span> <span class="k">requires</span> <span class="p">(</span><span class="n">T</span> <span class="n">x</span><span class="p">,</span> <span class="n">T</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="p">}</span>  <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">/</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">-=</span> <span class="n">y</span><span class="p">}</span>  <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">*=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="n">x</span> <span class="o">/=</span> <span class="n">y</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="o">-</span><span class="n">x</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">x</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">requires</span> <span class="nf">T</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="n">T</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="n">T</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">||</span> <span class="n">T</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="n">T</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="n">T</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">totally_ordered</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
+</div>
 </div><p>至于为什么不用<code>C++</code>自带的<code>std::floating_point</code>与<code>std::integral</code>，因为这两个追溯到根源的实现是结构的模板特化，也就是说如果有新的自定义数据类型，可以表达数与进行数运算但不会被识别为数，是不严谨的。</p>
+<h4 id="幂函数" class="heading-element"><span>幂函数</span>
+  <a href="#%e5%b9%82%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>在C++23中标准库仍有大部分未实现编译期常量的数学函数，其中就有<code>pow</code>，且所有数学函数都未实现泛型，因而要自己实现。
+如下是简易的实现，便于演示没用快速幂算法。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="n">T</span> <span class="n">pow</span><span class="p">(</span><span class="n">rational</span> <span class="k">auto</span> <span class="n">x</span><span class="p">,</span><span class="n">integral</span> <span class="k">auto</span> <span class="n">p</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">T</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">size_t</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">p</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">T</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">size_t</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;-</span><span class="n">p</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">/</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="基类量纲单位" class="heading-element"><span>基类（量纲单位）</span>
+  <a href="#%e5%9f%ba%e7%b1%bb%e9%87%8f%e7%ba%b2%e5%8d%95%e4%bd%8d" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>基类是一切扩展性的根源，要保留有最高的扩展性，因而使用模板进行定义：</p>
+<h4 id="基类数据" class="heading-element"><span>基类数据</span>
+  <a href="#%e5%9f%ba%e7%b1%bb%e6%95%b0%e6%8d%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>其中应至少含有</p>
+<ul>
+<li>尺规(<code>magnitude</code>)，要求范围为有理数$\mathbb{Q}$</li>
+<li>指数(<code>power</code>)，要求范围为整数$\mathbb{Z}$<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>简名(<code>short_name</code>)，要求为字符串</li>
+<li>量纲简名(<code>dimension_short_name</code>)，要求为字符串</li>
+</ul>
+<p>如下为基类中数据的定义：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">integral</span> <span class="n">power_t</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">basic_dimension</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">magnitude_t</span> <span class="n">magnitude</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">power_t</span> <span class="n">power</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">short_name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">dimension_short_name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中<code>std::string_view</code>还可被优化为<code>const char* const</code>但除非是超大量的单位存储，否则这优化是没啥必要的（因为不如<code>std::string_view</code>类方便，在理解意义上的）</p>
+<p>从基类中我们定义最通用的内存空间最小类：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">using</span> <span class="n">dimension</span> <span class="o">=</span> <span class="n">basic_dimension</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">float</span><span class="p">,</span><span class="n">std</span><span class="o">::</span><span class="kt">int8_t</span><span class="o">&gt;</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="基类函数" class="heading-element"><span>基类函数</span>
+  <a href="#%e5%9f%ba%e7%b1%bb%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>在基类中应有完全比较函数即<code>operator==()</code>函数，比较全部四个数据；
+也应有类型比较函数<code>type_equal</code>，比较幂指数与唯一单位名；
+还应有模板转换函数，为特殊超大单位提供无损转换</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">integral</span> <span class="n">power_t</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">basic_dimension</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="k">operator</span><span class="o">==</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="nf">type_equal</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">basic_dimension</span><span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span> <span class="n">convert</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>要达成以上条件，其中的约束为：</p>
+<ul>
+<li>为基类的任意派生</li>
+<li>二者有可隐式转换的类型</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">R</span><span class="p">,</span><span class="n">integral</span> <span class="n">I</span><span class="o">&gt;</span> <span class="k">typename</span> <span class="n">dimension_t</span><span class="p">,</span><span class="n">rational</span> <span class="n">R</span><span class="p">,</span><span class="n">integral</span> <span class="n">I</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">requires</span> <span class="k">requires</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">derived_from</span><span class="o">&lt;</span><span class="n">dimension_t</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;</span><span class="p">,</span><span class="n">basic_dimension</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;&gt;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">common_with</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">R</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">common_with</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span> <span class="n">dimension_t</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;&amp;</span> <span class="n">dimen</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="单位制词头结构" class="heading-element"><span>单位制词头结构</span>
+  <a href="#%e5%8d%95%e4%bd%8d%e5%88%b6%e8%af%8d%e5%a4%b4%e7%bb%93%e6%9e%84" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>其中有两种数据类型，这导致该结构更像是对基类（量纲单位）的包装</p>
+<ul>
+<li>单位制词头</li>
+<li>基类（量纲单位）</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -317,35 +567,708 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">rational</span> <span class="n">power_t</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">basic_dimension</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">magnitude_t</span> <span class="n">magnitude</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">power_t</span> <span class="n">power</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">integral</span> <span class="n">power_t</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">basic_MP_dimension</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MP</span> <span class="n">metric_prefix</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_dimension</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span> <span class="n">power_t</span><span class="o">&gt;</span> <span class="n">dimen</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>从基类中我们定义最通用的内存空间最小类：</p>
+</div><h4 id="单位制词头" class="heading-element"><span>单位制词头</span>
+  <a href="#%e5%8d%95%e4%bd%8d%e5%88%b6%e8%af%8d%e5%a4%b4" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>两种方式</p>
+<ul>
+<li>采用对数表示，运用<code>char</code>数据类型存储
+<ul>
+<li>优：空间换时间（但不至于这么省，又不是极限单片机），可能大概也许比较易懂</li>
+<li>劣：浪费计算时间</li>
+</ul>
+</li>
+<li>枚举类型 + 固定数组存储
+<ul>
+<li>优：时间换空间</li>
+<li>劣：每多一个词头多占用<code>4</code>字节（默认<code>float = float32_t</code>，占用 32<code>bit</code>= 4<code>byte</code>）</li>
+</ul>
+</li>
+</ul>
+<p>选用第二种方法——枚举类型 + 固定数组存储。
+采用<code>std::array</code>，会多8字节。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">enum</span> <span class="k">class</span> <span class="nc">MP</span> <span class="o">:</span> <span class="kt">char</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Q</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">R</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Y</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Z</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">E</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">P</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">T</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">G</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">M</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">h</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">da</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="err">μ</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">n</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">z</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">q</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">MP_array</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">to_array</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e27</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e21</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e18</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-18</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-21</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-27</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mf">1e-30</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="结构函数" class="heading-element"><span>结构函数</span>
+  <a href="#%e7%bb%93%e6%9e%84%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>与基类（量纲单位）类似</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">dimension</span> <span class="o">:</span> <span class="n">basic_dimension</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">float16_t</span><span class="p">,</span><span class="n">std</span><span class="o">::</span><span class="n">float16_t</span><span class="o">&gt;</span> <span class="p">{};</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">integral</span> <span class="n">power_t</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">basic_MP_dimension</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="kt">bool</span> <span class="nf">type_equal</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">basic_dimension</span><span class="o">&lt;</span><span class="p">...</span><span class="o">&gt;</span> <span class="n">convert</span><span class="p">(...)</span> <span class="k">const</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>参考资料：<br>
-[1] <a href="https://wuli.wiki/online/Units.html"target="_blank" rel="external nofollow noopener noreferrer">addis.物理量和单位转换[EB/OL].小时百科.https://wuli.wiki/online/Units.html</a><br>
-[2] <a href="https://gitee.com/llongww/common-units"target="_blank" rel="external nofollow noopener noreferrer">lilong.CommonUnits[CP/OL].gitee.(2021-04-19)[2024-05-22].https://gitee.com/llongww/common-units</a></p>
+</div><p>约束略有不同，只需确保泛型模板参数之间可以隐式转换即可：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">R</span><span class="p">,</span><span class="n">integral</span> <span class="n">I</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">requires</span> <span class="k">requires</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">common_with</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">R</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">common_with</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span><span class="n">I</span><span class="o">&gt;&amp;</span> <span class="n">MP_dimen</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="单位类" class="heading-element"><span>单位类</span>
+  <a href="#%e5%8d%95%e4%bd%8d%e7%b1%bb" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>前面的可以说是都是基础，接下来到了重点：单位类</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">value_t</span><span class="p">,</span><span class="n">rational</span> <span class="n">magnitude_t</span><span class="p">,</span><span class="n">integral</span> <span class="n">power_t</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">basic_unit</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="类型别名" class="heading-element"><span>类型别名</span>
+  <a href="#%e7%b1%bb%e5%9e%8b%e5%88%ab%e5%90%8d" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>使用的类型别名</p>
+<ul>
+<li><code>V</code>，一种类型，可转换为<code>value_t</code>，其约束为<code>std::convertible_to&lt;V,value_t&gt;</code></li>
+<li><code>M</code>，一种类型，可转换为<code>magnitude_t</code>，其约束为<code>std::convertible_to&lt;M,magnitude_t&gt;</code></li>
+<li><code>P</code>，一种类型，可转换为<code>power_t</code>，其约束为<code>std::convertible_to&lt;P,power_t&gt;</code></li>
+</ul>
+<p>以下省略<code>V</code>，<code>M</code>，<code>P</code>类型的约束</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">using</span> <span class="n">dimension_t</span> <span class="o">=</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span> <span class="n">power_t</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">MP_Less_t</span> <span class="o">=</span> <span class="n">MP_dimension_less</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span> <span class="n">power_t</span><span class="o">&gt;</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中 <code>MP_dimension_less</code> 为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">rational</span> <span class="n">M</span><span class="p">,</span><span class="n">integral</span> <span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">MP_dimension_less</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">constexpr</span> <span class="kt">bool</span> <span class="nf">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">ldimen</span><span class="p">,</span><span class="k">const</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">rdimen</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ldimen</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">dimension_name</span> <span class="o">&lt;</span> <span class="n">rdimen</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">dimension_name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="数据类型" class="heading-element"><span>数据类型</span>
+  <a href="#%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><ul>
+<li><code>value</code>，类型为<code>value_t</code></li>
+<li><code>dimens</code>，类型为<code>std::set&lt;dimension_t,MP_Less_t&gt;</code></li>
+</ul>
+<h4 id="模板类型转换" class="heading-element"><span>模板类型转换</span>
+  <a href="#%e6%a8%a1%e6%9d%bf%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>要注意因为是任意匹配类型，要进行模板类型转换才能插入
+使用 <code>basic_MP_dimension::convert</code></p>
+<h4 id="初始化" class="heading-element"><span>初始化</span>
+  <a href="#%e5%88%9d%e5%a7%8b%e5%8c%96" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><ul>
+<li>空初始化</li>
+<li>拷贝初始化</li>
+<li>值初始化</li>
+<li>值与单个单位类型初始化</li>
+<li>值与复数单位类型初始化</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="nf">basic_unit</span><span class="p">()</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="nf">basic_unit</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_unit</span><span class="o">&lt;</span><span class="n">V</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">unit</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="nf">basic_unit</span><span class="p">(</span><span class="k">const</span> <span class="n">value_t</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="nf">basic_unit</span><span class="p">(</span><span class="k">const</span> <span class="n">value_t</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">,</span><span class="k">const</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">dimen</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">input_range</span> <span class="n">Rng</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="n">basic_unit</span><span class="p">(</span><span class="k">const</span> <span class="n">value_t</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">,</span> <span class="n">Rng</span><span class="o">&amp;&amp;</span> <span class="n">range</span><span class="p">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="初始化约束" class="heading-element"><span>初始化约束</span>
+  <a href="#%e5%88%9d%e5%a7%8b%e5%8c%96%e7%ba%a6%e6%9d%9f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p>因为对容器里存储类型的判断无法直接泛型，所以只能由同名变量来判断了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">input_range</span> <span class="n">Rng</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">requires</span> <span class="k">requires</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">same_as</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">range_value_t</span><span class="o">&lt;</span><span class="n">Rng</span><span class="o">&gt;::</span><span class="n">metric_prefix</span><span class="p">),</span> <span class="n">MP</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">range_value_t</span><span class="o">&lt;</span><span class="n">Rng</span><span class="o">&gt;::</span><span class="n">dimen</span><span class="p">.</span><span class="n">magnitude</span><span class="p">),</span><span class="n">magnitude_t</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">convertible_to</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">range_value_t</span><span class="o">&lt;</span><span class="n">Rng</span><span class="o">&gt;::</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">),</span><span class="n">power_t</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">same_as</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">range_value_t</span><span class="o">&lt;</span><span class="n">Rng</span><span class="o">&gt;::</span><span class="n">dimen</span><span class="p">.</span><span class="n">short_name</span><span class="p">),</span> <span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">requires</span> <span class="n">std</span><span class="o">::</span><span class="n">same_as</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ranges</span><span class="o">::</span><span class="n">range_value_t</span><span class="o">&lt;</span><span class="n">Rng</span><span class="o">&gt;::</span><span class="n">dimen</span><span class="p">.</span><span class="n">dimension_name</span><span class="p">),</span> <span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="nf">basic_unit</span><span class="p">(</span><span class="k">const</span> <span class="n">value_t</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">,</span> <span class="n">Rng</span><span class="o">&amp;&amp;</span> <span class="n">range</span><span class="p">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="尺度计算" class="heading-element"><span>尺度计算</span>
+  <a href="#%e5%b0%ba%e5%ba%a6%e8%ae%a1%e7%ae%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="n">value_t</span> <span class="nf">MagnitudeCalculateFrom</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_unit</span><span class="o">&lt;</span><span class="n">V</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">u</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value_t</span> <span class="n">all_magnitude</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">dimens</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">value_t</span> <span class="n">magni</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">auto</span> <span class="n">dimen</span> <span class="o">=</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;::</span><span class="n">convert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="k">auto</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">find</span><span class="p">(</span><span class="n">dimen</span><span class="p">);</span> <span class="n">iter</span> <span class="o">!=</span> <span class="n">u</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">end</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">            <span class="n">magni</span> <span class="o">*=</span> <span class="n">pow</span><span class="o">&lt;</span><span class="n">value_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">dimen</span><span class="p">.</span><span class="n">magnitude</span> <span class="o">/</span> <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">magnitude</span><span class="p">,</span> <span class="n">iter</span><span class="o">-&gt;</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">magni</span> <span class="o">*=</span> <span class="n">pow</span><span class="o">&lt;</span><span class="n">value_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">MP_array</span><span class="p">[(</span><span class="kt">char</span><span class="p">)</span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">metric_prefix</span><span class="p">]</span> <span class="o">/</span> <span class="n">MP_array</span><span class="p">[(</span><span class="kt">char</span><span class="p">)</span><span class="n">i</span><span class="p">.</span><span class="n">metric_prefix</span><span class="p">],</span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">all_magnitude</span> <span class="o">*=</span> <span class="n">magni</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">all_magnitude</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="错误定义" class="heading-element"><span>错误定义</span>
+  <a href="#%e9%94%99%e8%af%af%e5%ae%9a%e4%b9%89" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>在这里作者并未自定义错误，全部采用<code>std::exception</code>错误（毕竟是演示）</p>
+<h3 id="加减" class="heading-element"><span>加减</span>
+  <a href="#%e5%8a%a0%e5%87%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>对于加减的计算，先是要比较其量纲单位是否匹配，后是尺度转换，再是相加
+因而其返回值为<code>std::expected</code>。
+同时应返回的<code>basic_unit</code>要取二者共有的类型，即<code>std::common_type_t&lt;magnitude_t,M&gt;</code>等</p>
+<h4 id="加减函数" class="heading-element"><span>加减函数</span>
+  <a href="#%e5%8a%a0%e5%87%8f%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>以加法函数为例，错误在返回值中传出而非直接抛出
+以下为函数声明<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="n">expected</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_unit</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">value_t</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">plus</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_unit</span><span class="o">&lt;</span><span class="n">V</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">unit</span><span class="p">)</span> <span class="k">const</span> <span class="k">noexcept</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>而在函数中为比较量纲，那么</p>
+<ol>
+<li>容器大小相同，即<code>size</code>相同</li>
+<li>由于使用的容器<code>std::set</code>为有序容器，即可直接按顺序比较即可。因为顺序不同时二者一定不同</li>
+</ol>
+<p>最终返回公共类型</p>
+<p>以下为函数实现<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">dimens</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">i</span> <span class="o">=</span> <span class="n">dimens</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">j</span> <span class="o">=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(;</span><span class="n">i</span> <span class="o">!=</span> <span class="n">dimens</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">!=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">end</span><span class="p">();)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="o">-&gt;</span><span class="n">type_equal</span><span class="p">(</span><span class="o">*</span><span class="n">j</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">unexpected</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">j</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">basic_unit</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">value_t</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span><span class="p">(</span><span class="n">value</span> <span class="o">+</span> <span class="n">MagnitudeCalculateFrom</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span> <span class="o">*</span> <span class="n">unit</span><span class="p">.</span><span class="n">getValue</span><span class="p">(),</span><span class="n">dimens</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">unexpected</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="p">());</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>同理可得到减法函数</p>
+<h4 id="加减运算符" class="heading-element"><span>加减运算符</span>
+  <a href="#%e5%8a%a0%e5%87%8f%e8%bf%90%e7%ae%97%e7%ac%a6" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>套用加减函数并抛出可能的错误
+以加法运算符为例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">u</span> <span class="o">=</span> <span class="n">plus</span><span class="p">(</span><span class="n">unit</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">u</span><span class="p">.</span><span class="n">has_value</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">u</span><span class="p">.</span><span class="n">value</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">throw</span> <span class="n">u</span><span class="p">.</span><span class="n">error</span><span class="p">();</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>减法运算符同理</p>
+<h3 id="乘" class="heading-element"><span>乘</span>
+  <a href="#%e4%b9%98" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>对于乘法，其并没有任何的错误可被抛出</p>
+<h4 id="乘法函数" class="heading-element"><span>乘法函数</span>
+  <a href="#%e4%b9%98%e6%b3%95%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>以下为乘法的函数声明<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="n">basic_unit</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">value_t</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">multiply</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_unit</span><span class="o">&lt;</span><span class="n">V</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">unit</span><span class="p">)</span> <span class="k">const</span> <span class="k">noexcept</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>对于乘法而言无需去比较量纲，但需要去尝试去找出相对应的量纲并在指数上相加，如果找不到就插入该找不到的量纲。</p>
+<p>以下为函数实现<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_MP_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MP_dimension_less</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">tmp_dimens</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">dimens</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">dimen</span> <span class="o">=</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;::</span><span class="n">convert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span> <span class="n">tmp_dimen</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">magnitude</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">short_name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">dimension_name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="k">auto</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">find</span><span class="p">(</span><span class="n">dimen</span><span class="p">);</span> <span class="n">iter</span> <span class="o">!=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">end</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tmp_dimen</span><span class="p">.</span><span class="n">power</span> <span class="o">+=</span> <span class="n">iter</span><span class="o">-&gt;</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tmp_dimens</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">basic_MP_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="p">.</span><span class="n">metric_prefix</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tmp_dimen</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="乘法运算符" class="heading-element"><span>乘法运算符</span>
+  <a href="#%e4%b9%98%e6%b3%95%e8%bf%90%e7%ae%97%e7%ac%a6" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>直接使用乘法函数即可</p>
+<h3 id="除" class="heading-element"><span>除</span>
+  <a href="#%e9%99%a4" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>对于除法，与乘法相比需判断值是否为<code>0</code></p>
+<h4 id="除法函数" class="heading-element"><span>除法函数</span>
+  <a href="#%e9%99%a4%e6%b3%95%e5%87%bd%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>以下为除法的函数声明<sup id="fnref2:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="n">expected</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_unit</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">value_t</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">devide</span><span class="p">(</span><span class="k">const</span> <span class="n">basic_unit</span><span class="o">&lt;</span><span class="n">V</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">unit</span><span class="p">)</span> <span class="k">const</span> <span class="k">noexcept</span><span class="p">;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>以下为函数实现<sup id="fnref2:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">unit</span><span class="p">.</span><span class="n">getValue</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">unexpected</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_MP_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MP_dimension_less</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="n">tmp_dimens</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">dimens</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">dimen</span> <span class="o">=</span> <span class="n">basic_MP_dimension</span><span class="o">&lt;</span><span class="n">M</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;::</span><span class="n">convert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">basic_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span> <span class="n">tmp_dimen</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">magnitude</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">short_name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="p">.</span><span class="n">dimen</span><span class="p">.</span><span class="n">dimension_name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="k">auto</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">find</span><span class="p">(</span><span class="n">dimen</span><span class="p">);</span> <span class="n">iter</span> <span class="o">!=</span> <span class="n">unit</span><span class="p">.</span><span class="n">getDimensions</span><span class="p">().</span><span class="n">end</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tmp_dimen</span><span class="p">.</span><span class="n">power</span> <span class="o">-=</span> <span class="n">iter</span><span class="o">-&gt;</span><span class="n">dimen</span><span class="p">.</span><span class="n">power</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tmp_dimens</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">basic_MP_dimension</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="p">.</span><span class="n">metric_prefix</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tmp_dimen</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">basic_unit</span><span class="o">&lt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">value_t</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">magnitude_t</span><span class="p">,</span><span class="n">M</span><span class="o">&gt;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">common_type_t</span><span class="o">&lt;</span><span class="n">power_t</span><span class="p">,</span><span class="n">P</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span><span class="p">(</span><span class="n">value</span> <span class="o">/</span> <span class="p">(</span><span class="n">MagnitudeCalculateFrom</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span> <span class="o">*</span> <span class="n">unit</span><span class="p">.</span><span class="n">getValue</span><span class="p">()),</span><span class="n">tmp_dimens</span><span class="p">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="除法运算符" class="heading-element"><span>除法运算符</span>
+  <a href="#%e9%99%a4%e6%b3%95%e8%bf%90%e7%ae%97%e7%ac%a6" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>使用并抛出（如有）除法函数中的错误</p>
+<h2 id="todo" class="heading-element"><span>TODO</span>
+  <a href="#todo" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 添加错误分类</li>
+<li><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 重载<code>std::formatter</code></li>
+<li><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 四则运算的运算至函数与运算符（e.g. <code>operator+=</code>与<code>plusto</code>）</li>
+<li><i class="fa-regular fa-square fa-fw" aria-hidden="true"></i> 从字符串中转化（估计要等到C++26了，静态反射）</li>
+</ul>
+<p>参考资料：<br>
+[1] <a href="https://wuli.wiki/online/Units.html"target="_blank" rel="external nofollow noopener noreferrer">addis.物理量和单位转换[EB/OL].小时百科.https://wuli.wiki/online/Units.html</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
 <p>实际在物理中是真有指数为有理数的量纲操作的，但这样不好计算，详情参照 <a href="https://wuli.wiki/online/Units.html"target="_blank" rel="external nofollow noopener noreferrer">小时百科-物理量和单位转换-例3</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
+<li id="fn:2">
+<p>在以下情形中，<code>V</code>、<code>M</code>、<code>P</code>类型都是由<code>std::common_with</code>进行约束&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>不同模板之间无法访问私有变量，所以只能从公开接口获取&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="更新于 2024-06-17 23:00:00">更新于 2024-06-17&nbsp;</span>
+        <span title="更新于 2024-10-09 22:45:00">更新于 2024-10-09&nbsp;</span>
       </div><div class="post-info-license">
             <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
           </div></div><div class="post-info-line">
@@ -396,7 +1319,7 @@
 
   <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.133.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.135.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8-RC"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
               <a href="/">Bendancom</a></span></div></div>
