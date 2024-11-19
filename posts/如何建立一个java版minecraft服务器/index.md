@@ -16,7 +16,7 @@
 
 ### 环境准备
 
-- `Java`
+- `OpenJDK`
 
 ### 知识准备
 
@@ -24,7 +24,7 @@
 - 基础`Linux`知识(`Linux`系统)
 - 一定英语水平，便于解决疑难问题
 
-## 服务器根目录
+## Minecraft文件根目录
 
 推荐创建在带快照的文件系统内。
 
@@ -55,10 +55,6 @@
 ### 云服务器
 
 - 云快照
-
-## 环境准备
-
-自行查找Java的安装。
 
 ## 服务器安装
 
@@ -135,11 +131,16 @@ java -Xmx4G -jar server.jar nogui
 服务器配置文件为`server.properties`，可参照 [Minecraft中文Wiki——配置服务器设置](https://minecraft.fandom.com/zh/wiki/Server.properties) 配置
 
 
-### `Forge`
+### `Forge`/`NeoForge`
 
-[下载地址](https://files.minecraftforge.net/net/minecraftforge/forge)[^1]
+`NeoForge` 为 `Forge` 分支，二者在安装上无不同之处
+
+[`Forge`](https://files.minecraftforge.net/net/minecraftforge/forge)[^1]
 选择自己想要的版本，点击`Install`后跳转至下载页面
 等待5秒后点击右上角的Skip即可下载
+
+[`NeoForge`](https://neoforged.net/)
+选择版本，然后点击`Install`下载
 
 将下载的文件移至根目录中，而后执行如下命令：
 
@@ -150,7 +151,7 @@ java -jar forge-1.20.1-48.0.39.jar --installServer
 参数含义：
 
 - `-jar forge-1.20.1-48.0.39.jar` 指定执行文件，根据自身下载的文件更改该参数
-- `--installServer` `Forge`自带参数
+- `--installServer` `Forge`/`NeoForge` 安装服务端
 
 执行完后根目录如下：
 
@@ -185,10 +186,14 @@ java -jar forge-1.20.1-48.0.39.jar --installServer
 `Java`启动参数在`user_jvm_args.txt`中设置。
 服务器配置文件为`server.properties`，可参照 [Minecraft中文Wiki——配置服务器设置](https://minecraft.fandom.com/zh/wiki/Server.properties) 配置。
 
-### `Fabric`
+### `Fabric`/`Quilt`
 
-[下载地址](https://fabricmc.net/use/server)
-下载所需版本至根目录中。
+`Quilt`脱胎于`Fabric`,可用几乎所有的`Fabric`mod，二者在安装方式上也并无差别
+
+[`Fabric`](https://fabricmc.net/use/server)
+下载所需版本至开服根目录中。
+[`Quilt`](https://quiltmc.org/en/install/server/)
+下载所需版本至开服根目录中
 
 执行如下命令：
 该命令为初始化服务器组件与启动服务器。
@@ -245,9 +250,19 @@ java -Xmx4G -jar fabric-server-mc.1.19.2-loader.0.14.21-launcher.0.11.2.jar nogu
 在防火墙中开启对应端口的`IPv6`出入
 
 `IPv6`因其庞大的数量，目前所有`IPv6`设备都有自己的属于`IPv6`的公网`IP`。
-`IPv6`在国内虽说普及率达到90%以上，但由于设备的报废期问题，可能受到路由器、光猫、运营商等的拦截。
+`IPv6`在国内虽说普及率达到90%以上，但由于有许多老设备仍在运行，可能受到路由器、光猫、运营商等的拦截。
 
 [^1]:注：该官网可能需要`VPN`才能流畅连接
+
+## 快照
+
+### 通用
+
+文件系统级别的快照备份
+
+### mod
+
+[高级备份](https://www.mcmod.cn/class/10769.html)这一mod可供选择。
 
 
 ---
