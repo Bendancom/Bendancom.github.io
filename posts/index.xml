@@ -8,8 +8,17 @@
     <language>zh-CN</language>
     <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
     <webMaster>bendancom@qq.com (Bendancom)</webMaster>
-    <lastBuildDate>Tue, 19 Nov 2024 23:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2025 00:30:00 +0800</lastBuildDate>
     <atom:link href="https://bendancom.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archlinux-基础安装-1-前期准备</title>
+      <link>https://bendancom.github.io/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 19 Jan 2025 00:30:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/</guid>
+      <category domain="https://bendancom.github.io/categories/archlinux-%E5%AE%89%E8%A3%85/">Archlinux 安装</category>
+      <category domain="https://bendancom.github.io/categories/archlinux/">Archlinux</category>
+      <description>&lt;p&gt;Archlinux 的安装网上是有详细的教程，但不算特别全面，因而本合集在此进行汇总。&#xA;本文只列举讲解了安装 Archlinux 的前期准备。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>单位库实现</title>
       <link>https://bendancom.github.io/posts/%E5%8D%95%E4%BD%8D%E5%BA%93%E5%AE%9E%E7%8E%B0/</link>

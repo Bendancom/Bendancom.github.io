@@ -8,8 +8,22 @@
     <language>zh-CN</language>
     <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
     <webMaster>bendancom@qq.com (Bendancom)</webMaster>
-    <lastBuildDate>Tue, 19 Nov 2024 23:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2025 00:30:00 +0800</lastBuildDate>
     <atom:link href="https://bendancom.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archlinux</title>
+      <link>https://bendancom.github.io/categories/archlinux/</link>
+      <pubDate>Sun, 19 Jan 2025 00:30:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/categories/archlinux/</guid>
+      <description>Archlinux</description>
+    </item>
+    <item>
+      <title>Archlinux 安装</title>
+      <link>https://bendancom.github.io/categories/archlinux-%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 19 Jan 2025 00:30:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/categories/archlinux-%E5%AE%89%E8%A3%85/</guid>
+      <description>Archlinux 安装</description>
+    </item>
     <item>
       <title>C&#43;&#43;</title>
       <link>https://bendancom.github.io/categories/c&#43;&#43;/</link>

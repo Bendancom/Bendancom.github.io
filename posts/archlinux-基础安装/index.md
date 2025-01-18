@@ -132,5 +132,5 @@ sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
 ---
 
 > 作者: Bendancom  
-> URL: http://localhost:1313/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/  
+> URL: https://bendancom.github.io/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/  
 
