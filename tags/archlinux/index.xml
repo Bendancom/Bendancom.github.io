@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArchLinux - 标签 - Bendancom的博客</title>
+    <link>http://localhost:1313/tags/archlinux/</link>
+    <description>Bendancom&#39;s Blog</description>
+    <generator>Hugo 0.140.1 &amp; FixIt v0.3.17-a58d15e1</generator>
+    <language>zh-CN</language>
+    <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
+    <webMaster>bendancom@qq.com (Bendancom)</webMaster>
+    <lastBuildDate>Sat, 19 Oct 2024 23:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archlinux-基础安装-1-前期准备</title>
+      <link>http://localhost:1313/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 19 Oct 2024 23:00:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>http://localhost:1313/posts/archlinux-%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85/</guid>
+      <category domain="http://localhost:1313/categories/archlinux-%E5%AE%89%E8%A3%85/">Archlinux 安装</category>
+      <category domain="http://localhost:1313/categories/archlinux/">Archlinux</category>
+      <description>&lt;p&gt;Archlinux 的安装网上是有详细的教程，但不算特别全面，因而本合集在此进行汇总。&#xA;本文只列举讲解了安装 Archlinux 的前期准备。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
