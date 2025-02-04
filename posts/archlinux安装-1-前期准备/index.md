@@ -174,6 +174,8 @@ sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
 
 ### 软件包
 
+注意安装系统的架构
+
  - `base` 基础软件包，包含基础的命令
  - `base-devel` 基础构建工具
  - `linux` 系统本体
@@ -184,7 +186,7 @@ sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
 
 ### ZFS
 
-由于法律问题，ZFS文件系统并未内置于内核中。
+由于许可证不兼容问题，ZFS文件系统并未内置于内核中。
 
 #### 镜像
 

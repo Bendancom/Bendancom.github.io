@@ -4,12 +4,21 @@
     <title>Install - 标签 - Bendancom的博客</title>
     <link>https://bendancom.github.io/tags/install/</link>
     <description>Bendancom&#39;s Blog</description>
-    <generator>Hugo 0.140.1 &amp; FixIt v0.3.17-a58d15e1</generator>
+    <generator>Hugo 0.142.0 &amp; FixIt v0.3.17-a58d15e1</generator>
     <language>zh-CN</language>
     <managingEditor>bendancom@qq.com (Bendancom)</managingEditor>
     <webMaster>bendancom@qq.com (Bendancom)</webMaster>
-    <lastBuildDate>Sun, 19 Jan 2025 00:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2025 00:10:00 +0800</lastBuildDate>
     <atom:link href="https://bendancom.github.io/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archlinux安装-2-安装系统</title>
+      <link>https://bendancom.github.io/posts/archlinux%E5%AE%89%E8%A3%85-2-%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Wed, 05 Feb 2025 00:10:00 +0800</pubDate><author>bendancom@qq.com (Bendancom)</author>
+      <guid>https://bendancom.github.io/posts/archlinux%E5%AE%89%E8%A3%85-2-%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <category domain="https://bendancom.github.io/categories/archlinux-%E5%AE%89%E8%A3%85/">Archlinux 安装</category>
+      <category domain="https://bendancom.github.io/categories/archlinux/">Archlinux</category>
+      <description>&lt;p&gt;Archlinux 的安装网上是有详细的教程，但不算特别全面，因而本合集在此进行汇总。&lt;/p&gt;&#xA;&lt;p&gt;本文只讲解了 Archlinux 系统的安装。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Archlinux安装-1-前期准备</title>
       <link>https://bendancom.github.io/posts/archlinux%E5%AE%89%E8%A3%85-1-%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/</link>
